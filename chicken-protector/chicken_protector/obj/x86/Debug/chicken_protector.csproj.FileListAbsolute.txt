@@ -1,0 +1,6 @@
+C:\Users\Josh\GitHub\chicken-protector\chicken-protector\chicken_protector\bin\x86\Debug\chicken_protector.exe
+C:\Users\Josh\GitHub\chicken-protector\chicken-protector\chicken_protector\bin\x86\Debug\chicken_protector.pdb
+C:\Users\Josh\GitHub\chicken-protector\chicken-protector\chicken_protector\obj\x86\Debug\chicken_protector.csprojResolveAssemblyReference.cache
+C:\Users\Josh\GitHub\chicken-protector\chicken-protector\chicken_protector\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\Josh\GitHub\chicken-protector\chicken-protector\chicken_protector\obj\x86\Debug\chicken_protector.exe
+C:\Users\Josh\GitHub\chicken-protector\chicken-protector\chicken_protector\obj\x86\Debug\chicken_protector.pdb
