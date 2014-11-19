@@ -1,0 +1,8 @@
+C:\Users\Josh\GitHub\chicken-protector\ChickenProtector\ChickenProtector\bin\x86\Debug\ChickenProtector.exe
+C:\Users\Josh\GitHub\chicken-protector\ChickenProtector\ChickenProtector\bin\x86\Debug\ChickenProtector.pdb
+C:\Users\Josh\GitHub\chicken-protector\ChickenProtector\ChickenProtector\bin\x86\Debug\artemis.dll
+C:\Users\Josh\GitHub\chicken-protector\ChickenProtector\ChickenProtector\bin\x86\Debug\artemis.xml
+C:\Users\Josh\GitHub\chicken-protector\ChickenProtector\ChickenProtector\obj\x86\Debug\ChickenProtector.csprojResolveAssemblyReference.cache
+C:\Users\Josh\GitHub\chicken-protector\ChickenProtector\ChickenProtector\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\Josh\GitHub\chicken-protector\ChickenProtector\ChickenProtector\obj\x86\Debug\ChickenProtector.exe
+C:\Users\Josh\GitHub\chicken-protector\ChickenProtector\ChickenProtector\obj\x86\Debug\ChickenProtector.pdb
