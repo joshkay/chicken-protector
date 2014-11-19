@@ -81,26 +81,6 @@
     <Compile Include="ChickenProtectorGame.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="ArtemisDLL\Debug\PC\artemis.dll" />
-    <Content Include="ArtemisDLL\Debug\PC\artemis.xml" />
-    <Content Include="ArtemisDLL\Debug\Phone7\ArtemisPhone7.dll" />
-    <Content Include="ArtemisDLL\Debug\Phone7\ArtemisPhone7.xml" />
-    <Content Include="ArtemisDLL\Debug\Phone7\ParallelTasks.dll" />
-    <Content Include="ArtemisDLL\Debug\Phone7\ParallelTasks.xml" />
-    <Content Include="ArtemisDLL\Debug\Xbox360\ArtemisXbox360.dll" />
-    <Content Include="ArtemisDLL\Debug\Xbox360\ArtemisXbox360.xml" />
-    <Content Include="ArtemisDLL\Debug\Xbox360\ParallelTasks.dll" />
-    <Content Include="ArtemisDLL\Debug\Xbox360\ParallelTasks.xml" />
-    <Content Include="ArtemisDLL\Release\PC\artemis.dll" />
-    <Content Include="ArtemisDLL\Release\PC\artemis.xml" />
-    <Content Include="ArtemisDLL\Release\Phone7\ArtemisPhone7.dll" />
-    <Content Include="ArtemisDLL\Release\Phone7\ArtemisPhone7.xml" />
-    <Content Include="ArtemisDLL\Release\Phone7\ParallelTasks.dll" />
-    <Content Include="ArtemisDLL\Release\Phone7\ParallelTasks.xml" />
-    <Content Include="ArtemisDLL\Release\Xbox360\ArtemisXbox360.dll" />
-    <Content Include="ArtemisDLL\Release\Xbox360\ArtemisXbox360.xml" />
-    <Content Include="ArtemisDLL\Release\Xbox360\ParallelTasks.dll" />
-    <Content Include="ArtemisDLL\Release\Xbox360\ParallelTasks.xml" />
     <Content Include="Game.ico" />
     <Content Include="GameThumbnail.png">
       <XnaPlatformSpecific>true</XnaPlatformSpecific>
@@ -133,6 +113,12 @@
       <ProductName>Windows Installer 4.5</ProductName>
       <Install>true</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Components\" />
+    <Folder Include="Spatials\" />
+    <Folder Include="Systems\" />
+    <Folder Include="Templates\" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\XNA Game Studio\Microsoft.Xna.GameStudio.targets" />
