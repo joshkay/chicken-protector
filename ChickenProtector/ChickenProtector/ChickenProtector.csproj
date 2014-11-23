@@ -76,9 +76,13 @@
     <Reference Include="System.Net" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Components\SpatialFormComponent.cs" />
+    <Compile Include="Components\TransformComponent.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="ChickenProtectorGame.cs" />
+    <Compile Include="Spatials\PlayerShip.cs" />
+    <Compile Include="Systems\RenderSystem.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Game.ico" />
@@ -115,9 +119,6 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Components\" />
-    <Folder Include="Spatials\" />
-    <Folder Include="Systems\" />
     <Folder Include="Templates\" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />

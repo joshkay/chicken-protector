@@ -1,1 +1,2 @@
 Content\myFont.xnb
+Content\player.xnb

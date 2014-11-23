@@ -11,7 +11,7 @@ namespace ChickenProtector
     using Microsoft.Xna.Framework.Graphics;
     using Microsoft.Xna.Framework.Input;
 
-    //using ChickenProtector.Components;
+    using ChickenProtector.Components;
     //using ChickenProtector.Templates;
 
     #endregion
@@ -112,7 +112,7 @@ namespace ChickenProtector
 #else
             this.entityWorld.InitializeAll(true);
 #endif
-
+            this.InitializePlayerShip();
             base.Initialize();
         }
 
@@ -137,6 +137,19 @@ namespace ChickenProtector
                 this.frameRate = this.frameCounter;
                 this.frameCounter = 0;
             }
-        }      
+        }
+        private void InitializePlayerShip()
+        {
+            Entity entity = this.entityWorld.CreateEntity();
+            entity.Group = "SHIPS";
+
+            entity.AddComponentFromPool<TransformComponent>();
+            entity.AddComponent(new SpatialFormComponent("PlayerShip"));
+           // entity.AddComponent(new HealthComponent(30));
+
+            entity.GetComponent<TransformComponent>().X = this.GraphicsDevice.Viewport.Width * 0.5f;
+            entity.GetComponent<TransformComponent>().Y = this.GraphicsDevice.Viewport.Height - 50;
+            entity.Tag = "PLAYER";
+        }
     }
 }
