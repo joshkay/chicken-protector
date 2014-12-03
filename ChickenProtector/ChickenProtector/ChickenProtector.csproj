@@ -81,6 +81,7 @@
     <Compile Include="Components\HealthComponent.cs" />
     <Compile Include="Components\SpatialFormComponent.cs" />
     <Compile Include="Components\TransformComponent.cs" />
+    <Compile Include="Components\VelocityComponent.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="ChickenProtectorGame.cs" />
@@ -88,6 +89,7 @@
     <Compile Include="Systems\CollisionSystem.cs" />
     <Compile Include="Systems\HealthRenderSystem.cs" />
     <Compile Include="Systems\HudRenderSystem.cs" />
+    <Compile Include="Systems\MovementSystem.cs" />
     <Compile Include="Systems\RenderSystem.cs" />
   </ItemGroup>
   <ItemGroup>
