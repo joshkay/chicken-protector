@@ -85,6 +85,9 @@
     <Compile Include="Program.cs" />
     <Compile Include="ChickenProtectorGame.cs" />
     <Compile Include="Spatials\PlayerShip.cs" />
+    <Compile Include="Systems\CollisionSystem.cs" />
+    <Compile Include="Systems\HealthRenderSystem.cs" />
+    <Compile Include="Systems\HudRenderSystem.cs" />
     <Compile Include="Systems\RenderSystem.cs" />
   </ItemGroup>
   <ItemGroup>
