@@ -90,6 +90,7 @@
     <Compile Include="Systems\HealthRenderSystem.cs" />
     <Compile Include="Systems\HudRenderSystem.cs" />
     <Compile Include="Systems\MovementSystem.cs" />
+    <Compile Include="Systems\ChickenControlSystem.cs" />
     <Compile Include="Systems\RenderSystem.cs" />
   </ItemGroup>
   <ItemGroup>
