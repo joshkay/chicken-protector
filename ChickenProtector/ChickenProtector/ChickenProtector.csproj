@@ -82,16 +82,21 @@
     <Compile Include="Components\SpatialFormComponent.cs" />
     <Compile Include="Components\TransformComponent.cs" />
     <Compile Include="Components\VelocityComponent.cs" />
+    <Compile Include="Components\WeaponComponent.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="ChickenProtectorGame.cs" />
     <Compile Include="Spatials\PlayerShip.cs" />
     <Compile Include="Systems\CollisionSystem.cs" />
+    <Compile Include="Systems\EnemyShooterSystem.cs" />
     <Compile Include="Systems\HealthRenderSystem.cs" />
     <Compile Include="Systems\HudRenderSystem.cs" />
     <Compile Include="Systems\MovementSystem.cs" />
     <Compile Include="Systems\ChickenControlSystem.cs" />
     <Compile Include="Systems\RenderSystem.cs" />
+    <Compile Include="Templates\BulletExplosionTemplate.cs" />
+    <Compile Include="Templates\EnemyTemplate.cs" />
+    <Compile Include="Templates\MissleTemplate.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Game.ico" />
@@ -127,9 +132,7 @@
       <Install>true</Install>
     </BootstrapperPackage>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Templates\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\XNA Game Studio\Microsoft.Xna.GameStudio.targets" />
   <!--
