@@ -97,6 +97,7 @@
     <Compile Include="Templates\BulletExplosionTemplate.cs" />
     <Compile Include="Templates\EnemyTemplate.cs" />
     <Compile Include="Templates\MissleTemplate.cs" />
+    <Compile Include="Templates\PlayerExplosionTemplate.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Game.ico" />

@@ -16,7 +16,7 @@ using ChickenProtector.Components;
     [ArtemisEntitySystem(GameLoopType = GameLoopType.Update, Layer = 1)]
     public class MovementSystem : EntityProcessingSystem<TransformComponent, VelocityComponent>
     {
-        public override void Process(Entity entity, TransformComponent transformComponent, VelocityComponent velocityComponent)
+        protected override void Process(Entity entity, TransformComponent transformComponent, VelocityComponent velocityComponent)
         {
             if (velocityComponent != null)
             {

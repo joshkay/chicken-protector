@@ -20,7 +20,7 @@
     {
         private static readonly long TwoSecondsTicks = TimeSpan.FromSeconds(2).Ticks;
 
-        public override void Process(Entity entity, TransformComponent transformComponent, WeaponComponent weaponComponent, EnemyComponent enemyComponent)
+        protected override void Process(Entity entity, TransformComponent transformComponent, WeaponComponent weaponComponent, EnemyComponent enemyComponent)
         {
             if (weaponComponent != null)
             {

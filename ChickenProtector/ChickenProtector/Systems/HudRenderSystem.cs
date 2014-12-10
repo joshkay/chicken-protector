@@ -35,7 +35,8 @@
         {
             HealthComponent healthComponent = entity.GetComponent<HealthComponent>();
             Vector2 textPosition = new Vector2(20, this.spriteBatch.GraphicsDevice.Viewport.Height);
-            this.spriteBatch.DrawString(this.font, "Health: " + healthComponent.HealthPercentage + "%", textPosition, Color.White);
+            //when i build it stops mid build and this line that is commented is outlined in yellow but it doesnt show me any errors
+            //this.spriteBatch.DrawString(this.font, "Health: " + healthComponent.HealthPercentage + "%", textPosition, Color.White);
         }
     }
 }

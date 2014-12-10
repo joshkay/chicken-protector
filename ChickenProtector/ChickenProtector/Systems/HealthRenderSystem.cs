@@ -27,7 +27,7 @@
             this.font = BlackBoard.GetEntry<SpriteFont>("SpriteFont");
         }
 
-        public override void Process(Entity entity, HealthComponent healthComponent, TransformComponent transformComponent)
+        protected override void Process(Entity entity, HealthComponent healthComponent, TransformComponent transformComponent)
         {
             if (healthComponent != null)
             {

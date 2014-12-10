@@ -13,7 +13,7 @@ using Artemis.Utils;
 using Microsoft.Xna.Framework;
 
 using ChickenProtector.Components;
-//using ChickenProtector.Templates;
+using ChickenProtector.Templates;
 
 #endregion
 
@@ -42,7 +42,7 @@ using ChickenProtector.Components;
                         {
                             TransformComponent bulletTransform = bullet.GetComponent<TransformComponent>();
                             Entity bulletExplosion = this.EntityWorld.CreateEntityFromTemplate(BulletExplosionTemplate.Name);
-                            bulletExplosion.GetComponent<TransformComponent<().Position = bulletTransform.Position;
+                            bulletExplosion.GetComponent<TransformComponent>().Position = bulletTransform.Position;
                             bulletExplosion.Refresh();
                             bullet.Delete();
 
@@ -52,7 +52,7 @@ using ChickenProtector.Components;
                             if  (!healthComponent.IsAlive)
                             {
                                 TransformComponent shipTransform = ship.GetComponent<TransformComponent>();
-                                Entity shipExplosion = this.EntityWorld.CreateEntityFromTemplate(ShipExplosionTemplate.Name);
+                                Entity shipExplosion = this.EntityWorld.CreateEntityFromTemplate(PlayerExplosionTemplate.Name);
                                 shipExplosion.GetComponent<TransformComponent>().Position = shipTransform.Position;
                                 shipExplosion.Refresh();
                                 ship.Delete();
