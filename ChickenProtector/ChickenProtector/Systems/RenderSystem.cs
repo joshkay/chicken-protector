@@ -96,18 +96,10 @@ namespace ChickenProtector.Systems
                     {
                         Egg.Render(this.spriteBatch, this.contentManager, transformComponent);
                     }
-                    /*else if (string.Compare("EnemyShip", this.spatialName, StringComparison.InvariantCultureIgnoreCase) == 0)
+                    else if (string.Compare("Barn", this.spatialName, StringComparison.InvariantCultureIgnoreCase) == 0)
                     {
-                        EnemyShip.Render(this.spriteBatch, this.contentManager, transformComponent);
+                        Barn.Render(this.spriteBatch, this.contentManager, transformComponent);
                     }
-                    else if (string.Compare("BulletExplosion", this.spatialName, StringComparison.InvariantCultureIgnoreCase) == 0)
-                    {
-                        Explosion.Render(this.spriteBatch, this.contentManager, transformComponent, Color.Red, 10);
-                    }
-                    else if (string.Compare("ShipExplosion", this.spatialName, StringComparison.InvariantCultureIgnoreCase) == 0)
-                    {
-                        ShipExplosion.Render(this.spriteBatch, this.contentManager, transformComponent, Color.Yellow, 30);
-                    }*/
                 }
             }
         }

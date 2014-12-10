@@ -18,9 +18,6 @@
 
     class PlayScreen : GameScreen
     {
-        Texture2D image;
-        Rectangle imageRectangle;
-
         /// <summary>The one second.</summary>
         private static readonly TimeSpan OneSecond = TimeSpan.FromSeconds(1);
 
@@ -39,16 +36,10 @@
         /// <summary>The entityWorld.</summary>
         private EntityWorld entityWorld;
 
-        public PlayScreen(Game game, SpriteBatch spriteBatch, Texture2D image)
+        public PlayScreen(Game game, SpriteBatch spriteBatch)
             : base(game, spriteBatch)
         {
-            this.image = image;
-            imageRectangle = new Rectangle(
-                0,
-                0,
-                Game.Window.ClientBounds.Width,
-                Game.Window.ClientBounds.Height
-            );
+            
         }
 
         public override void Initialize()
@@ -69,17 +60,13 @@
 #else
             this.entityWorld.InitializeAll(true);
 #endif
-            this.InitializePlayerShip();
+
+            InitializeBarn();
+            InitializeChicken();
         }
 
         public override void Update(GameTime gameTime)
         {
-            if (Keyboard.GetState().IsKeyDown(Keys.Escape) ||
-                GamePad.GetState(PlayerIndex.One).IsButtonDown(Buttons.Back))
-            {
-                game.Exit();
-            }
-
             this.entityWorld.Update();
 
             ++this.frameCounter;
@@ -115,9 +102,16 @@
             base.Draw(gameTime);
         }
 
-        private void InitializePlayerShip()
+        private void InitializeChicken()
         {
             Entity entity = this.entityWorld.CreateEntityFromTemplate(PlayerTemplate.Name);
+            entity.GetComponent<TransformComponent>().X = this.GraphicsDevice.Viewport.Width * 0.5f;
+            entity.GetComponent<TransformComponent>().Y = this.GraphicsDevice.Viewport.Height - 50;
+        }
+
+        private void InitializeBarn()
+        {
+            Entity entity = this.entityWorld.CreateEntityFromTemplate(BarnTemplate.Name);
             entity.GetComponent<TransformComponent>().X = this.GraphicsDevice.Viewport.Width * 0.5f;
             entity.GetComponent<TransformComponent>().Y = this.GraphicsDevice.Viewport.Height - 50;
         }

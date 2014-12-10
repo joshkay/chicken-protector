@@ -10,7 +10,7 @@ namespace ChickenProtector
         /// </summary>
         static void Main(string[] args)
         {
-            using (GameStates game = new GameStates())
+            using (ChickenGame game = new ChickenGame())
             {
                 game.Run();
             }

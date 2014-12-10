@@ -19,10 +19,7 @@ namespace ChickenProtector.Screens
             set { menuComponent.SelectedIndex = value; }
         }
 
-        public StartScreen(Game game, 
-            SpriteBatch spriteBatch,
-            SpriteFont spriteFont, 
-            Texture2D image)
+        public StartScreen(Game game, SpriteBatch spriteBatch, SpriteFont spriteFont, Texture2D image)
             : base(game, spriteBatch)
         {
             string[] menuItems = { "Start Game", "End Game" };
@@ -31,6 +28,7 @@ namespace ChickenProtector.Screens
                 spriteFont,
                 menuItems
             );
+            menuComponent.Position = new Vector2(50, Game.Window.ClientBounds.Height - Game.Window.ClientBounds.Height / 4);
 
             Components.Add(menuComponent);
 
@@ -43,6 +41,11 @@ namespace ChickenProtector.Screens
             );
         }
 
+        public override void Initialize()
+        {
+            base.Initialize();
+        }
+
         public override void Update(GameTime gameTime)
         {
             base.Update(gameTime);
@@ -50,6 +53,7 @@ namespace ChickenProtector.Screens
 
         public override void Draw(GameTime gameTime)
         {
+            this.GraphicsDevice.Clear(Color.Black);
             spriteBatch.Draw(image, imageRectangle, Color.White);
             base.Draw(gameTime);
         }

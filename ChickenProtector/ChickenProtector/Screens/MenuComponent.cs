@@ -18,7 +18,6 @@ namespace ChickenProtector
         int selectedIndex;
 
         Color normal = Color.White;
-        Color hilite = Color.Black;
 
         KeyboardState keyboardState;
         KeyboardState oldKeyboardState;
@@ -34,6 +33,25 @@ namespace ChickenProtector
         float width = 0f;
         float height = 0f;
 
+        public Vector2 Position
+        {
+            get { return position; }
+            set { position = value; }
+        }
+        public float Width
+        {
+            get { return width; }
+        }
+        public float Height
+        {
+            get { return height; }
+        }
+        public Color FontColor
+        {
+            get { return normal; }
+            set { normal = value; }
+        }
+
         public int SelectedIndex
         {
             get { return selectedIndex; }
@@ -47,10 +65,7 @@ namespace ChickenProtector
             }
         }
 
-        public MenuComponent(Game game,
-            SpriteBatch spriteBatch,
-            SpriteFont spriteFont,
-            string[] menuItems)
+        public MenuComponent(Game game, SpriteBatch spriteBatch, SpriteFont spriteFont, string[] menuItems)
             : base(game)
         {
             this.spriteBatch = spriteBatch;
@@ -75,10 +90,6 @@ namespace ChickenProtector
             (Game.Window.ClientBounds.Height - height) / 2);
         }
 
-        /// <summary>
-        /// Allows the game component to perform any initialization it needs to before starting
-        /// to run.  This is where it can query for any required services and load content.
-        /// </summary>
         public override void Initialize()
         {
             base.Initialize();
@@ -123,19 +134,28 @@ namespace ChickenProtector
         {
             base.Draw(gameTime);
             Vector2 location = position;
-            Color tint;
+            
+            float pointerSize = spriteFont.MeasureString("> ").X;
+            float offset;
+            string item;
+            
             for (int i = 0; i < menuItems.Length; i++)
             {
+                item = menuItems[i];
                 if (i == selectedIndex)
-                    tint = hilite;
+                {
+                    item = "> " + item;
+                    offset = pointerSize;
+                }
                 else
-                    tint = normal;
+                    offset = 0;
 
                 spriteBatch.DrawString(
                     spriteFont,
-                    menuItems[i],
-                    location,
-                    tint);
+                    item,
+                    location - new Vector2(offset, 0),
+                    normal);
+
                 location.Y += spriteFont.LineSpacing + 5;
             }
         }

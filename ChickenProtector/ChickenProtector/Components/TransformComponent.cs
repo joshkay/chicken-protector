@@ -53,23 +53,25 @@ namespace ChickenProtector.Components
     {
         /// <summary>Initializes a new instance of the <see cref="TransformComponent" /> class.</summary>
         public TransformComponent()
-            : this(Vector2.Zero)
+            : this(Vector2.Zero, 1, 1)
         {
         }
 
         /// <summary>Initializes a new instance of the <see cref="TransformComponent" /> class.</summary>
         /// <param name="x">The x.</param>
         /// <param name="y">The y.</param>
-        public TransformComponent(float x, float y)
-            : this(new Vector2(x, y))
+        public TransformComponent(float x, float y, float width, float height)
+            : this(new Vector2(x, y), width, height)
         {
         }
 
         /// <summary>Initializes a new instance of the <see cref="TransformComponent" /> class.</summary>
         /// <param name="position">The position.</param>
-        public TransformComponent(Vector2 position)
+        public TransformComponent(Vector2 position, float width, float height)
         {
             this.Position = position;
+            this.Width = width;
+            this.Height = height;
         }
 
         /// <summary>Gets or sets the position.</summary>
@@ -88,6 +90,9 @@ namespace ChickenProtector.Components
             }
         }
 
+        public float Width { get; set; }
+        public float Height { get; set; }
+
         /// <summary>Gets or sets the x.</summary>
         /// <value>The X.</value>
         public float X { get; set; }
@@ -100,6 +105,8 @@ namespace ChickenProtector.Components
         public override void CleanUp()
         {
             this.Position = Vector2.Zero;
+            this.Width = 1;
+            this.Height = 1;
         }
     }
 }
