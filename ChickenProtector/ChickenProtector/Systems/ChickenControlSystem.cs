@@ -14,7 +14,7 @@
     using Microsoft.Xna.Framework.Input;
 
     using ChickenProtector.Components;
-   //using ChickenProtector.Templates;
+    using ChickenProtector.Templates;
 
     #endregion
 
@@ -38,8 +38,9 @@
         {
             TransformComponent transformComponent = entity.GetComponent<TransformComponent>();
             KeyboardState keyboardState = Keyboard.GetState();
+
             float keyMoveSpeed = 0.3f * TimeSpan.FromTicks(this.EntityWorld.Delta).Milliseconds;
-            if (keyboardState.IsKeyDown(Keys.A) || keyboardState.IsKeyDown(Keys.Left))
+            if (keyboardState.IsKeyDown(Keys.A))
             {
                 transformComponent.X -= keyMoveSpeed;
                 if (transformComponent.X < 32)
@@ -47,7 +48,7 @@
                     transformComponent.X = 32;
                 }
             }
-            if (keyboardState.IsKeyDown(Keys.D) || keyboardState.IsKeyDown(Keys.Right))
+            if (keyboardState.IsKeyDown(Keys.D))
             {
                 transformComponent.X += keyMoveSpeed;
                 if (transformComponent.X > this.graphicsDevice.Viewport.Width - 32)
@@ -55,7 +56,7 @@
                     transformComponent.X = this.graphicsDevice.Viewport.Width - 32;
                 }
             }
-            if (keyboardState.IsKeyDown(Keys.W) || keyboardState.IsKeyDown(Keys.Up))
+            if (keyboardState.IsKeyDown(Keys.W))
             {
                 transformComponent.Y -= keyMoveSpeed;
                 if (transformComponent.Y < 32)
@@ -63,7 +64,7 @@
                     transformComponent.Y = 32;
                 }
             }
-            if (keyboardState.IsKeyDown(Keys.S) || keyboardState.IsKeyDown(Keys.Down))
+            if (keyboardState.IsKeyDown(Keys.S))
             {
                 transformComponent.Y += keyMoveSpeed;
                 if (transformComponent.Y > this.graphicsDevice.Viewport.Height - 32)
@@ -71,16 +72,41 @@
                     transformComponent.Y = this.graphicsDevice.Viewport.Height - 32;
                 }
             }
+
+            if (keyboardState.IsKeyDown(Keys.Left))
+            {
+                if (this.eggLaunchTimer.IsReached(this.EntityWorld.Delta))
+                    AddMissile(transformComponent, entity.Tag, 0);
+            }
+            else if (keyboardState.IsKeyDown(Keys.Right))
+            {
+                if (this.eggLaunchTimer.IsReached(this.EntityWorld.Delta))
+                    AddMissile(transformComponent, entity.Tag, 180);
+            }
+            else if (keyboardState.IsKeyDown(Keys.Up))
+            {
+                if (this.eggLaunchTimer.IsReached(this.EntityWorld.Delta))
+                    AddMissile(transformComponent, entity.Tag, 90);
+            }
+            else if (keyboardState.IsKeyDown(Keys.Down))
+            {
+                if (this.eggLaunchTimer.IsReached(this.EntityWorld.Delta))
+                    AddMissile(transformComponent, entity.Tag, -90);
+            }
         }
-       /* private void AddMissile(TransformComponent transformComponent, float angle = 90.0f, float offsetX = 0.0f)
+
+        private void AddMissile(TransformComponent transformComponent, string tag, float angle = 90.0f, float offsetX = 0.0f)
         {
-            Entity missile = this.EntityWorld.CreateEntityFromTemplate(MissileTemplate.Name);
+            Entity egg = this.EntityWorld.CreateEntityFromTemplate(EggTemplate.Name);
 
-            missile.GetComponent<TransformComponent>().X = transformComponent.X + 1 + offsetX;
-            missile.GetComponent<TransformComponent>().Y = transformComponent.Y - 20;
+            egg.GetComponent<TransformComponent>().X = transformComponent.X;
+            egg.GetComponent<TransformComponent>().Y = transformComponent.Y;
 
-            missile.GetComponent<VelocityComponent>().Speed = -0.5f;
-            missile.GetComponent<VelocityComponent>().Angle = angle;
-        }*/
+            egg.GetComponent<VelocityComponent>().Speed = -0.5f;
+            egg.GetComponent<VelocityComponent>().Angle = angle;
+
+            egg.GetComponent<ProjectileComponent>().ShooterTag = tag;
+            egg.GetComponent<ProjectileComponent>().ShooterImmune = true;
+        }
     }
 }

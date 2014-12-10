@@ -26,7 +26,7 @@
             {
                 if ((weaponComponent.ShotAt + TwoSecondsTicks) < FastDateTime.Now.Ticks)
                 {
-                    Entity missle = this.EntityWorld.CreateEntityFromTemplate(MissleTemplate.Name);
+                    Entity missle = this.EntityWorld.CreateEntityFromTemplate(MissileTemplate.Name);
 
                     missle.GetComponent<TransformComponent>().X = transformComponent.X;
                     missle.GetComponent<TransformComponent>().Y = transformComponent.Y + 20;
@@ -36,7 +36,6 @@
                     weaponComponent.ShotAt = FastDateTime.Now.Ticks;
                 }
             }
-        
         }
     }
 }

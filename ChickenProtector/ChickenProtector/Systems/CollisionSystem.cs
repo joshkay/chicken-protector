@@ -28,15 +28,24 @@ using ChickenProtector.Templates;
         protected override void ProcessEntities(IDictionary<int, Entity> entities)
         {
             Bag<Entity> bullets = this.EntityWorld.GroupManager.GetEntities("BULLETS");
-            Bag<Entity> ships = this.EntityWorld.GroupManager.GetEntities("SHIPS");
+            Bag<Entity> ships = this.EntityWorld.GroupManager.GetEntities("ANIMALS");
+
             if (bullets != null && ships != null)
             {
-                for(int shipIndex = 0; ships.Count > shipIndex; ++shipIndex)
+                for (int shipIndex = 0; ships.Count > shipIndex; ++shipIndex)
                 {
                     Entity ship = ships.Get(shipIndex);
                     for (int bulletIndex = 0; bullets.Count > bulletIndex; ++bulletIndex)
                     {
                         Entity bullet = bullets.Get(bulletIndex);
+                        ProjectileComponent bulletProjectile = bullet.GetComponent<ProjectileComponent>();
+
+                        // do not test collision between bullet and shooter
+                        if (bulletProjectile.ShooterImmune)
+                        {
+                            if (bulletProjectile.ShooterTag == ship.Tag)
+                                continue;
+                        }
 
                         if (this.CollisionExists(bullet, ship))
                         {
@@ -63,10 +72,10 @@ using ChickenProtector.Templates;
                 }
             }
         }
+
         private bool CollisionExists(Entity entity1, Entity entity2)
         {
             return Vector2.Distance(entity1.GetComponent<TransformComponent>().Position, entity2.GetComponent<TransformComponent>().Position) < 20;
         }
-        }
     }
-
+}

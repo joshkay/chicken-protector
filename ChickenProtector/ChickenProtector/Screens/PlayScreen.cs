@@ -12,21 +12,17 @@
     using Microsoft.Xna.Framework.Input;
 
     using ChickenProtector.Components;
-    //using ChickenProtector.Templates;
+    using ChickenProtector.Templates;
 
     #endregion
 
     class PlayScreen : GameScreen
     {
-        KeyboardState keyboardState;
         Texture2D image;
         Rectangle imageRectangle;
 
         /// <summary>The one second.</summary>
         private static readonly TimeSpan OneSecond = TimeSpan.FromSeconds(1);
-
-        /// <summary>The graphics.</summary>
-        private readonly GraphicsDeviceManager graphics;
 
         /// <summary>The elapsed time.</summary>
         private TimeSpan elapsedTime;
@@ -121,16 +117,9 @@
 
         private void InitializePlayerShip()
         {
-            Entity entity = this.entityWorld.CreateEntity();
-            entity.Group = "SHIPS";
-
-            entity.AddComponentFromPool<TransformComponent>();
-            entity.AddComponent(new SpatialFormComponent("PlayerShip"));
-            entity.AddComponent(new HealthComponent(30));
-
+            Entity entity = this.entityWorld.CreateEntityFromTemplate(PlayerTemplate.Name);
             entity.GetComponent<TransformComponent>().X = this.GraphicsDevice.Viewport.Width * 0.5f;
             entity.GetComponent<TransformComponent>().Y = this.GraphicsDevice.Viewport.Height - 50;
-            entity.Tag = "PLAYER";
         }
     }
 }

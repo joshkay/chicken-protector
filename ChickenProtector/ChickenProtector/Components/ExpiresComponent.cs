@@ -14,6 +14,7 @@
         {
             this.LifeTime = lifeTime;   
         }
+
         public bool IsExpired
         {
             get

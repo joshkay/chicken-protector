@@ -30,7 +30,7 @@ using Artemis.Interface;
         {
             get
             {
-                return this.AngleAsRadians * ToRadians;
+                return this.Angle * ToRadians;
             }
         }
 

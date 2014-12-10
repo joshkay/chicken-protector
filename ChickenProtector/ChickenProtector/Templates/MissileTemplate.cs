@@ -11,7 +11,7 @@ using ChickenProtector.Components;
 #endregion
 
     [ArtemisEntityTemplate(Name)]
-    public class MissleTemplate : IEntityTemplate
+    public class MissileTemplate : IEntityTemplate
     {
         public const string Name = "MissleTemplate";
 
@@ -20,7 +20,7 @@ using ChickenProtector.Components;
             entity.Group = "BULLETS";
 
             entity.AddComponentFromPool<TransformComponent>();
-            entity.AddComponent(new SpatialFormComponent("Missle"));
+            entity.AddComponent(new SpatialFormComponent("Egg"));
             entity.AddComponent(new VelocityComponent());
             entity.AddComponent(new ExpiresComponent(2000));
 

@@ -63,8 +63,15 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="chick.jpg">
+    <Compile Include="chick.png">
       <Name>chick</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="egg.png">
+      <Name>egg</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>

@@ -79,6 +79,7 @@
     <Compile Include="Components\EnemyComponent.cs" />
     <Compile Include="Components\ExpiresComponent.cs" />
     <Compile Include="Components\HealthComponent.cs" />
+    <Compile Include="Components\ProjectileComponent.cs" />
     <Compile Include="Components\SpatialFormComponent.cs" />
     <Compile Include="Components\TransformComponent.cs" />
     <Compile Include="Components\VelocityComponent.cs" />
@@ -88,9 +89,9 @@
     <Compile Include="Screens\MenuComponent.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Program.cs" />
-    <Compile Include="ChickenProtectorGame.cs" />
     <Compile Include="Screens\PlayScreen.cs" />
     <Compile Include="Screens\StartScreen.cs" />
+    <Compile Include="Spatials\Egg.cs" />
     <Compile Include="Spatials\PlayerShip.cs" />
     <Compile Include="Systems\CollisionSystem.cs" />
     <Compile Include="Systems\EnemyShooterSystem.cs" />
@@ -100,9 +101,11 @@
     <Compile Include="Systems\ChickenControlSystem.cs" />
     <Compile Include="Systems\RenderSystem.cs" />
     <Compile Include="Templates\BulletExplosionTemplate.cs" />
+    <Compile Include="Templates\EggTemplate.cs" />
     <Compile Include="Templates\EnemyTemplate.cs" />
-    <Compile Include="Templates\MissleTemplate.cs" />
+    <Compile Include="Templates\MissileTemplate.cs" />
     <Compile Include="Templates\PlayerExplosionTemplate.cs" />
+    <Compile Include="Templates\PlayerTemplate.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Game.ico" />

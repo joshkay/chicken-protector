@@ -7,8 +7,8 @@
       <Importer>FontDescriptionImporter</Importer>
       <Processor>FontDescriptionProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Josh\GitHub\chicken-protector\ChickenProtector\ChickenProtector\bin\x86\Debug\Content\myFont.xnb</Output>
-      <Time>2014-12-10T06:11:17.8488061-05:00</Time>
+      <Output>X:\GitHub\chicken-protector\ChickenProtector\ChickenProtector\bin\x86\Debug\Content\myFont.xnb</Output>
+      <Time>2014-12-01T19:50:25.8336177-05:00</Time>
     </Item>
     <Item>
       <Source>menuFont.spritefont</Source>
@@ -16,8 +16,8 @@
       <Importer>FontDescriptionImporter</Importer>
       <Processor>FontDescriptionProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Josh\GitHub\chicken-protector\ChickenProtector\ChickenProtector\bin\x86\Debug\Content\menuFont.xnb</Output>
-      <Time>2014-12-10T07:04:59.4535853-05:00</Time>
+      <Output>X:\GitHub\chicken-protector\ChickenProtector\ChickenProtector\bin\x86\Debug\Content\menuFont.xnb</Output>
+      <Time>2014-12-10T07:44:13.2477765-05:00</Time>
     </Item>
     <Item>
       <Source>player.png</Source>
@@ -25,8 +25,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Josh\GitHub\chicken-protector\ChickenProtector\ChickenProtector\bin\x86\Debug\Content\player.xnb</Output>
-      <Time>2014-12-10T06:11:17.8728231-05:00</Time>
+      <Output>X:\GitHub\chicken-protector\ChickenProtector\ChickenProtector\bin\x86\Debug\Content\player.xnb</Output>
+      <Time>2014-12-09T18:35:26.3536471-05:00</Time>
     </Item>
     <Item>
       <Source>alienmetal.jpg</Source>
@@ -34,8 +34,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Josh\GitHub\chicken-protector\ChickenProtector\ChickenProtector\bin\x86\Debug\Content\alienmetal.xnb</Output>
-      <Time>2014-12-10T07:01:21.6340985-05:00</Time>
+      <Output>X:\GitHub\chicken-protector\ChickenProtector\ChickenProtector\bin\x86\Debug\Content\alienmetal.xnb</Output>
+      <Time>2014-12-10T07:44:13.2387722-05:00</Time>
     </Item>
     <Item>
       <Source>greenmetal.jpg</Source>
@@ -43,17 +43,26 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Josh\GitHub\chicken-protector\ChickenProtector\ChickenProtector\bin\x86\Debug\Content\greenmetal.xnb</Output>
-      <Time>2014-12-10T07:01:21.6280942-05:00</Time>
+      <Output>X:\GitHub\chicken-protector\ChickenProtector\ChickenProtector\bin\x86\Debug\Content\greenmetal.xnb</Output>
+      <Time>2014-12-10T07:44:13.244775-05:00</Time>
     </Item>
     <Item>
-      <Source>chick.jpg</Source>
+      <Source>chick.png</Source>
       <Name>chick</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Josh\GitHub\chicken-protector\ChickenProtector\ChickenProtector\bin\x86\Debug\Content\chick.xnb</Output>
-      <Time>2014-12-10T07:38:29.6101143-05:00</Time>
+      <Output>X:\GitHub\chicken-protector\ChickenProtector\ChickenProtector\bin\x86\Debug\Content\chick.xnb</Output>
+      <Time>2014-12-10T07:49:10.0839839-05:00</Time>
+    </Item>
+    <Item>
+      <Source>egg.png</Source>
+      <Name>egg</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>X:\GitHub\chicken-protector\ChickenProtector\ChickenProtector\bin\x86\Debug\Content\egg.xnb</Output>
+      <Time>2014-12-10T07:59:36.5077546-05:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
@@ -62,10 +71,10 @@
       <TargetProfile>Reach</TargetProfile>
       <BuildConfiguration>Debug</BuildConfiguration>
       <CompressContent>false</CompressContent>
-      <RootDirectory>C:\Users\Josh\GitHub\chicken-protector\ChickenProtector\ChickenProtectorContent\</RootDirectory>
-      <LoggerRootDirectory>C:\Users\Josh\GitHub\chicken-protector\ChickenProtector\ChickenProtector\</LoggerRootDirectory>
-      <IntermediateDirectory>C:\Users\Josh\GitHub\chicken-protector\ChickenProtector\ChickenProtector\obj\x86\Debug\</IntermediateDirectory>
-      <OutputDirectory>C:\Users\Josh\GitHub\chicken-protector\ChickenProtector\ChickenProtector\bin\x86\Debug\Content\</OutputDirectory>
+      <RootDirectory>X:\GitHub\chicken-protector\ChickenProtector\ChickenProtectorContent\</RootDirectory>
+      <LoggerRootDirectory>X:\GitHub\chicken-protector\ChickenProtector\ChickenProtector\</LoggerRootDirectory>
+      <IntermediateDirectory>X:\GitHub\chicken-protector\ChickenProtector\ChickenProtector\obj\x86\Debug\</IntermediateDirectory>
+      <OutputDirectory>X:\GitHub\chicken-protector\ChickenProtector\ChickenProtector\bin\x86\Debug\Content\</OutputDirectory>
     </Settings>
     <Assemblies>
       <Assembly>
@@ -93,8 +102,8 @@
         <Value>2011-09-01T17:22:30-04:00</Value>
       </Assembly>
       <Assembly>
-        <Key>C:\windows\Microsoft.Net\assembly\GAC_32\Microsoft.Xna.Framework.Content.Pipeline\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.Content.Pipeline.dll</Key>
-        <Value>2014-11-02T14:47:21.1236404-05:00</Value>
+        <Key>C:\WINDOWS\Microsoft.Net\assembly\GAC_32\Microsoft.Xna.Framework.Content.Pipeline\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.Content.Pipeline.dll</Key>
+        <Value>2014-11-02T16:11:33.1870952-05:00</Value>
       </Assembly>
     </Assemblies>
   </Asset>

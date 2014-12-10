@@ -92,11 +92,11 @@ namespace ChickenProtector.Systems
                     {
                         PlayerShip.Render(this.spriteBatch, this.contentManager, transformComponent);
                     }
-                   /* else if (string.Compare("Missile", this.spatialName, StringComparison.InvariantCultureIgnoreCase) == 0)
+                    else if (string.Compare("Egg", this.spatialName, StringComparison.InvariantCultureIgnoreCase) == 0)
                     {
-                        Missile.Render(this.spriteBatch, this.contentManager, transformComponent);
+                        Egg.Render(this.spriteBatch, this.contentManager, transformComponent);
                     }
-                    else if (string.Compare("EnemyShip", this.spatialName, StringComparison.InvariantCultureIgnoreCase) == 0)
+                    /*else if (string.Compare("EnemyShip", this.spatialName, StringComparison.InvariantCultureIgnoreCase) == 0)
                     {
                         EnemyShip.Render(this.spriteBatch, this.contentManager, transformComponent);
                     }

@@ -18,7 +18,7 @@ namespace ChickenProtector
         int selectedIndex;
 
         Color normal = Color.White;
-        Color hilite = Color.Aqua;
+        Color hilite = Color.Black;
 
         KeyboardState keyboardState;
         KeyboardState oldKeyboardState;

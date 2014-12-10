@@ -20,3 +20,17 @@ C:\Users\Josh\GitHub\chicken-protector\ChickenProtector\ChickenProtector\bin\x86
 C:\Users\Josh\GitHub\chicken-protector\ChickenProtector\ChickenProtector\bin\x86\Debug\Content\alienmetal.xnb
 C:\Users\Josh\GitHub\chicken-protector\ChickenProtector\ChickenProtector\bin\x86\Debug\Content\greenmetal.xnb
 C:\Users\Josh\GitHub\chicken-protector\ChickenProtector\ChickenProtector\bin\x86\Debug\Content\chick.xnb
+X:\GitHub\chicken-protector\ChickenProtector\ChickenProtector\bin\x86\Debug\Content\myFont.xnb
+X:\GitHub\chicken-protector\ChickenProtector\ChickenProtector\bin\x86\Debug\Content\menuFont.xnb
+X:\GitHub\chicken-protector\ChickenProtector\ChickenProtector\bin\x86\Debug\Content\player.xnb
+X:\GitHub\chicken-protector\ChickenProtector\ChickenProtector\bin\x86\Debug\Content\alienmetal.xnb
+X:\GitHub\chicken-protector\ChickenProtector\ChickenProtector\bin\x86\Debug\Content\greenmetal.xnb
+X:\GitHub\chicken-protector\ChickenProtector\ChickenProtector\bin\x86\Debug\Content\chick.xnb
+X:\GitHub\chicken-protector\ChickenProtector\ChickenProtector\bin\x86\Debug\ChickenProtector.exe
+X:\GitHub\chicken-protector\ChickenProtector\ChickenProtector\bin\x86\Debug\ChickenProtector.pdb
+X:\GitHub\chicken-protector\ChickenProtector\ChickenProtector\bin\x86\Debug\artemis.xml
+X:\GitHub\chicken-protector\ChickenProtector\ChickenProtector\obj\x86\Debug\ChickenProtector.csprojResolveAssemblyReference.cache
+X:\GitHub\chicken-protector\ChickenProtector\ChickenProtector\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+X:\GitHub\chicken-protector\ChickenProtector\ChickenProtector\obj\x86\Debug\ChickenProtector.exe
+X:\GitHub\chicken-protector\ChickenProtector\ChickenProtector\obj\x86\Debug\ChickenProtector.pdb
+X:\GitHub\chicken-protector\ChickenProtector\ChickenProtector\bin\x86\Debug\Content\egg.xnb
