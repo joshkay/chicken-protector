@@ -100,6 +100,10 @@ namespace ChickenProtector.Systems
                     {
                         Barn.Render(this.spriteBatch, this.contentManager, transformComponent);
                     }
+                    else if (string.Compare("Spider", this.spatialName, StringComparison.InvariantCultureIgnoreCase) == 0)
+                    {
+                        Spider.Render(this.spriteBatch, this.contentManager, transformComponent);
+                    }
                 }
             }
         }

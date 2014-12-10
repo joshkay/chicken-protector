@@ -14,7 +14,6 @@ E:\XNA\chicken-protector\ChickenProtector\ChickenProtector\obj\x86\Debug\Chicken
 E:\XNA\chicken-protector\ChickenProtector\ChickenProtector\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
 E:\XNA\chicken-protector\ChickenProtector\ChickenProtector\obj\x86\Debug\ChickenProtector.exe
 E:\XNA\chicken-protector\ChickenProtector\ChickenProtector\obj\x86\Debug\ChickenProtector.pdb
-E:\XNA\chicken-protector\ChickenProtector\ChickenProtector\bin\x86\Debug\Content\player.xnb
 C:\Users\Josh\GitHub\chicken-protector\ChickenProtector\ChickenProtector\bin\x86\Debug\Content\menuFont.xnb
 C:\Users\Josh\GitHub\chicken-protector\ChickenProtector\ChickenProtector\bin\x86\Debug\Content\player.xnb
 C:\Users\Josh\GitHub\chicken-protector\ChickenProtector\ChickenProtector\bin\x86\Debug\Content\alienmetal.xnb
@@ -34,3 +33,10 @@ X:\GitHub\chicken-protector\ChickenProtector\ChickenProtector\bin\x86\Debug\Cont
 X:\GitHub\chicken-protector\ChickenProtector\ChickenProtector\bin\x86\Debug\Content\barn.xnb
 X:\GitHub\chicken-protector\ChickenProtector\ChickenProtector\bin\x86\Debug\Content\chickenbarn.xnb
 X:\GitHub\chicken-protector\ChickenProtector\ChickenProtector\bin\x86\Debug\Content\popup.xnb
+E:\XNA\chicken-protector\ChickenProtector\ChickenProtector\bin\x86\Debug\Content\menuFont.xnb
+E:\XNA\chicken-protector\ChickenProtector\ChickenProtector\bin\x86\Debug\Content\chick.xnb
+E:\XNA\chicken-protector\ChickenProtector\ChickenProtector\bin\x86\Debug\Content\egg.xnb
+E:\XNA\chicken-protector\ChickenProtector\ChickenProtector\bin\x86\Debug\Content\barn.xnb
+E:\XNA\chicken-protector\ChickenProtector\ChickenProtector\bin\x86\Debug\Content\chickenbarn.xnb
+E:\XNA\chicken-protector\ChickenProtector\ChickenProtector\bin\x86\Debug\Content\popup.xnb
+E:\XNA\chicken-protector\ChickenProtector\ChickenProtector\bin\x86\Debug\Content\spider.xnb

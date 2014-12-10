@@ -8,16 +8,70 @@
       <Processor>FontDescriptionProcessor</Processor>
       <Options>None</Options>
       <Output>E:\XNA\chicken-protector\ChickenProtector\ChickenProtector\bin\x86\Debug\Content\myFont.xnb</Output>
-      <Time>2014-11-20T18:31:31.4660601-05:00</Time>
+      <Time>2014-12-10T13:43:57.6266619-05:00</Time>
     </Item>
     <Item>
-      <Source>player.png</Source>
-      <Name>player</Name>
+      <Source>menuFont.spritefont</Source>
+      <Name>menuFont</Name>
+      <Importer>FontDescriptionImporter</Importer>
+      <Processor>FontDescriptionProcessor</Processor>
+      <Options>None</Options>
+      <Output>E:\XNA\chicken-protector\ChickenProtector\ChickenProtector\bin\x86\Debug\Content\menuFont.xnb</Output>
+      <Time>2014-12-10T13:43:57.5686586-05:00</Time>
+    </Item>
+    <Item>
+      <Source>chick.png</Source>
+      <Name>chick</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>E:\XNA\chicken-protector\ChickenProtector\ChickenProtector\bin\x86\Debug\Content\player.xnb</Output>
-      <Time>2014-12-09T21:42:55.8921597-05:00</Time>
+      <Output>E:\XNA\chicken-protector\ChickenProtector\ChickenProtector\bin\x86\Debug\Content\chick.xnb</Output>
+      <Time>2014-12-10T13:43:57.3916485-05:00</Time>
+    </Item>
+    <Item>
+      <Source>egg.png</Source>
+      <Name>egg</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>E:\XNA\chicken-protector\ChickenProtector\ChickenProtector\bin\x86\Debug\Content\egg.xnb</Output>
+      <Time>2014-12-10T13:43:57.4626525-05:00</Time>
+    </Item>
+    <Item>
+      <Source>barn.png</Source>
+      <Name>barn</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>E:\XNA\chicken-protector\ChickenProtector\ChickenProtector\bin\x86\Debug\Content\barn.xnb</Output>
+      <Time>2014-12-10T13:46:09.612211-05:00</Time>
+    </Item>
+    <Item>
+      <Source>chickenbarn.jpg</Source>
+      <Name>chickenbarn</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>E:\XNA\chicken-protector\ChickenProtector\ChickenProtector\bin\x86\Debug\Content\chickenbarn.xnb</Output>
+      <Time>2014-12-10T13:46:09.6672142-05:00</Time>
+    </Item>
+    <Item>
+      <Source>popup.png</Source>
+      <Name>popup</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>E:\XNA\chicken-protector\ChickenProtector\ChickenProtector\bin\x86\Debug\Content\popup.xnb</Output>
+      <Time>2014-12-10T13:46:09.7192172-05:00</Time>
+    </Item>
+    <Item>
+      <Source>spider.png</Source>
+      <Name>spider</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>E:\XNA\chicken-protector\ChickenProtector\ChickenProtector\bin\x86\Debug\Content\spider.xnb</Output>
+      <Time>2014-12-10T13:55:39.1617874-05:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>

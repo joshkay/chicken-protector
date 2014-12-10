@@ -78,6 +78,7 @@
   <ItemGroup>
     <Compile Include="Components\EnemyComponent.cs" />
     <Compile Include="Components\ExpiresComponent.cs" />
+    <Compile Include="Components\FollowComponent.cs" />
     <Compile Include="Components\HealthComponent.cs" />
     <Compile Include="Components\ProjectileComponent.cs" />
     <Compile Include="Components\SpatialFormComponent.cs" />
@@ -95,9 +96,12 @@
     <Compile Include="Spatials\Barn.cs" />
     <Compile Include="Spatials\Egg.cs" />
     <Compile Include="Spatials\PlayerShip.cs" />
+    <Compile Include="Spatials\Spider.cs" />
     <Compile Include="Systems\CollisionSystem.cs" />
     <Compile Include="Systems\EnemyShooterSystem.cs" />
+    <Compile Include="Systems\EnemySpawnSystem.cs" />
     <Compile Include="Systems\ExpirationSystem.cs" />
+    <Compile Include="Systems\FollowSystem.cs" />
     <Compile Include="Systems\HealthRenderSystem.cs" />
     <Compile Include="Systems\HudRenderSystem.cs" />
     <Compile Include="Systems\MovementSystem.cs" />

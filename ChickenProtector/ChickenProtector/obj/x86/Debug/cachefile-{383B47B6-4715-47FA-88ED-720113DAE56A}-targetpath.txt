@@ -5,3 +5,4 @@ Content\egg.xnb
 Content\barn.xnb
 Content\chickenbarn.xnb
 Content\popup.xnb
+Content\spider.xnb
