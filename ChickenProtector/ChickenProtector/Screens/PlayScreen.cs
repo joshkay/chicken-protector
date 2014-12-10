@@ -65,6 +65,11 @@
             InitializeChicken();
         }
 
+        public override void Show()
+        {
+            base.Show();
+        }
+
         public override void Update(GameTime gameTime)
         {
             this.entityWorld.Update();

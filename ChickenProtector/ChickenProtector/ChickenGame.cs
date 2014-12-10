@@ -149,6 +149,8 @@ namespace ChickenProtector
                 {
                     activeScreen.Hide();
                     activeScreen = playScreen;
+
+                    activeScreen.Initialize();
                     activeScreen.Show();
                 }
                 if (startScreen.SelectedIndex == 1)
@@ -209,8 +211,10 @@ namespace ChickenProtector
 
             spriteBatch.Begin();
 
-            base.Draw(gameTime);
-
+            if (activeScreen == quitScreen)
+                playScreen.Draw(gameTime);
+            activeScreen.Draw(gameTime);
+            
             spriteBatch.End();
         }
     }
