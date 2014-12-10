@@ -95,6 +95,7 @@
     <Compile Include="Spatials\PlayerShip.cs" />
     <Compile Include="Systems\CollisionSystem.cs" />
     <Compile Include="Systems\EnemyShooterSystem.cs" />
+    <Compile Include="Systems\ExpirationSystem.cs" />
     <Compile Include="Systems\HealthRenderSystem.cs" />
     <Compile Include="Systems\HudRenderSystem.cs" />
     <Compile Include="Systems\MovementSystem.cs" />

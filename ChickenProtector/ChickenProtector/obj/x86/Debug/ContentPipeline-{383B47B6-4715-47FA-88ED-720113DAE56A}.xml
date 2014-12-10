@@ -17,7 +17,7 @@
       <Processor>FontDescriptionProcessor</Processor>
       <Options>None</Options>
       <Output>X:\GitHub\chicken-protector\ChickenProtector\ChickenProtector\bin\x86\Debug\Content\menuFont.xnb</Output>
-      <Time>2014-12-10T07:44:13.2477765-05:00</Time>
+      <Time>2014-12-10T08:49:52.070378-05:00</Time>
     </Item>
     <Item>
       <Source>player.png</Source>
@@ -26,7 +26,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>X:\GitHub\chicken-protector\ChickenProtector\ChickenProtector\bin\x86\Debug\Content\player.xnb</Output>
-      <Time>2014-12-09T18:35:26.3536471-05:00</Time>
+      <Time>2014-12-10T08:49:52.0773816-05:00</Time>
     </Item>
     <Item>
       <Source>alienmetal.jpg</Source>
@@ -35,7 +35,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>X:\GitHub\chicken-protector\ChickenProtector\ChickenProtector\bin\x86\Debug\Content\alienmetal.xnb</Output>
-      <Time>2014-12-10T07:44:13.2387722-05:00</Time>
+      <Time>2014-12-10T08:49:52.0643749-05:00</Time>
     </Item>
     <Item>
       <Source>greenmetal.jpg</Source>
@@ -44,7 +44,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>X:\GitHub\chicken-protector\ChickenProtector\ChickenProtector\bin\x86\Debug\Content\greenmetal.xnb</Output>
-      <Time>2014-12-10T07:44:13.244775-05:00</Time>
+      <Time>2014-12-10T08:49:52.068377-05:00</Time>
     </Item>
     <Item>
       <Source>chick.png</Source>
@@ -53,7 +53,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>X:\GitHub\chicken-protector\ChickenProtector\ChickenProtector\bin\x86\Debug\Content\chick.xnb</Output>
-      <Time>2014-12-10T07:49:10.0839839-05:00</Time>
+      <Time>2014-12-10T08:49:52.0653761-05:00</Time>
     </Item>
     <Item>
       <Source>egg.png</Source>
@@ -62,7 +62,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>X:\GitHub\chicken-protector\ChickenProtector\ChickenProtector\bin\x86\Debug\Content\egg.xnb</Output>
-      <Time>2014-12-10T07:59:36.5077546-05:00</Time>
+      <Time>2014-12-10T08:49:52.0663761-05:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>

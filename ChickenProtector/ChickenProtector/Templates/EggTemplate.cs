@@ -22,7 +22,7 @@
             entity.AddComponentFromPool<TransformComponent>();
             entity.AddComponent(new SpatialFormComponent("Egg"));
             entity.AddComponent(new VelocityComponent());
-            entity.AddComponent(new ExpiresComponent(2000));
+            entity.AddComponent(new ExpiresComponent(2500));
             entity.AddComponent(new ProjectileComponent());
 
             return entity;
