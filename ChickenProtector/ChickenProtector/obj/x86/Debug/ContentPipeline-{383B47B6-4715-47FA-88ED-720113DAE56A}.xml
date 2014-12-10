@@ -8,7 +8,52 @@
       <Processor>FontDescriptionProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Josh\GitHub\chicken-protector\ChickenProtector\ChickenProtector\bin\x86\Debug\Content\myFont.xnb</Output>
-      <Time>2014-11-19T08:46:22.8720098-05:00</Time>
+      <Time>2014-12-10T06:11:17.8488061-05:00</Time>
+    </Item>
+    <Item>
+      <Source>menuFont.spritefont</Source>
+      <Name>menuFont</Name>
+      <Importer>FontDescriptionImporter</Importer>
+      <Processor>FontDescriptionProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Josh\GitHub\chicken-protector\ChickenProtector\ChickenProtector\bin\x86\Debug\Content\menuFont.xnb</Output>
+      <Time>2014-12-10T07:04:59.4535853-05:00</Time>
+    </Item>
+    <Item>
+      <Source>player.png</Source>
+      <Name>player</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Josh\GitHub\chicken-protector\ChickenProtector\ChickenProtector\bin\x86\Debug\Content\player.xnb</Output>
+      <Time>2014-12-10T06:11:17.8728231-05:00</Time>
+    </Item>
+    <Item>
+      <Source>alienmetal.jpg</Source>
+      <Name>alienmetal</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Josh\GitHub\chicken-protector\ChickenProtector\ChickenProtector\bin\x86\Debug\Content\alienmetal.xnb</Output>
+      <Time>2014-12-10T07:01:21.6340985-05:00</Time>
+    </Item>
+    <Item>
+      <Source>greenmetal.jpg</Source>
+      <Name>greenmetal</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Josh\GitHub\chicken-protector\ChickenProtector\ChickenProtector\bin\x86\Debug\Content\greenmetal.xnb</Output>
+      <Time>2014-12-10T07:01:21.6280942-05:00</Time>
+    </Item>
+    <Item>
+      <Source>chick.jpg</Source>
+      <Name>chick</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Josh\GitHub\chicken-protector\ChickenProtector\ChickenProtector\bin\x86\Debug\Content\chick.xnb</Output>
+      <Time>2014-12-10T07:38:29.6101143-05:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>

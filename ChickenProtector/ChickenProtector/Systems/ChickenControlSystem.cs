@@ -47,7 +47,7 @@
                     transformComponent.X = 32;
                 }
             }
-            else if (keyboardState.IsKeyDown(Keys.D) || keyboardState.IsKeyDown(Keys.Right))
+            if (keyboardState.IsKeyDown(Keys.D) || keyboardState.IsKeyDown(Keys.Right))
             {
                 transformComponent.X += keyMoveSpeed;
                 if (transformComponent.X > this.graphicsDevice.Viewport.Width - 32)
@@ -55,20 +55,20 @@
                     transformComponent.X = this.graphicsDevice.Viewport.Width - 32;
                 }
             }
-            else if (keyboardState.IsKeyDown(Keys.W) || keyboardState.IsKeyDown(Keys.Up))
-            {
-                transformComponent.Y += keyMoveSpeed;
-                if (transformComponent.Y > 32)
-                {
-                    transformComponent.Y = 32;
-                }
-            }
-            else if (keyboardState.IsKeyDown(Keys.D) || keyboardState.IsKeyDown(Keys.Down))
+            if (keyboardState.IsKeyDown(Keys.W) || keyboardState.IsKeyDown(Keys.Up))
             {
                 transformComponent.Y -= keyMoveSpeed;
                 if (transformComponent.Y < 32)
                 {
                     transformComponent.Y = 32;
+                }
+            }
+            if (keyboardState.IsKeyDown(Keys.S) || keyboardState.IsKeyDown(Keys.Down))
+            {
+                transformComponent.Y += keyMoveSpeed;
+                if (transformComponent.Y > this.graphicsDevice.Viewport.Height - 32)
+                {
+                    transformComponent.Y = this.graphicsDevice.Viewport.Height - 32;
                 }
             }
         }

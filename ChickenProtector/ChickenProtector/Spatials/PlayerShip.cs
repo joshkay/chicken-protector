@@ -14,7 +14,7 @@ using ChickenProtector.Components;
         {
             if (ship == null)
             {
-                ship = contentManager.Load<Texture2D>("player");
+                ship = contentManager.Load<Texture2D>("chick");
             }
 
             spriteBatch.Draw(ship, new Vector2(transformComponent.X - (ship.Width * 0.5f), transformComponent.Y - (ship.Height * 0.5f)), ship.Bounds, Color.White);

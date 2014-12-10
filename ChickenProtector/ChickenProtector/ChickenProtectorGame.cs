@@ -145,7 +145,7 @@ namespace ChickenProtector
 
             entity.AddComponentFromPool<TransformComponent>();
             entity.AddComponent(new SpatialFormComponent("PlayerShip"));
-           // entity.AddComponent(new HealthComponent(30));
+            entity.AddComponent(new HealthComponent(30));
 
             entity.GetComponent<TransformComponent>().X = this.GraphicsDevice.Viewport.Width * 0.5f;
             entity.GetComponent<TransformComponent>().Y = this.GraphicsDevice.Viewport.Height - 50;

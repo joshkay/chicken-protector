@@ -13,6 +13,7 @@
     using ChickenProtector.Components;
 
     #endregion
+
     [ArtemisEntitySystem(GameLoopType = GameLoopType.Draw, Layer = 0)]
     public class HudRenderSystem : TagSystem
     {
@@ -35,8 +36,8 @@
         {
             HealthComponent healthComponent = entity.GetComponent<HealthComponent>();
             Vector2 textPosition = new Vector2(20, this.spriteBatch.GraphicsDevice.Viewport.Height);
-            //when i build it stops mid build and this line that is commented is outlined in yellow but it doesnt show me any errors
-            //this.spriteBatch.DrawString(this.font, "Health: " + healthComponent.HealthPercentage + "%", textPosition, Color.White);
+
+            this.spriteBatch.DrawString(this.font, "Health: " + healthComponent.HealthPercentage + "%", textPosition, Color.White);
         }
     }
 }
