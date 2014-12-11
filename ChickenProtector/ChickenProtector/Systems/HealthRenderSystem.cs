@@ -35,7 +35,8 @@
                 {
                     string text = healthComponent.HealthPercentage + "%";
                     float c = (float)(healthComponent.HealthPercentage / 100);
-                    Color color = new Color(1.0f - c, c, 0.0f);
+                    //Color color = new Color(1.0f - c, c, 0.0f);
+                    Color color = Color.White;
                     this.spriteBatch.DrawString(this.font, text, new Vector2(transformComponent.X, transformComponent.Y - 40), color, 0.0f, this.font.MeasureString(text) * 0.5f, 1.0f, SpriteEffects.None, 0.5f);
                 }
             }

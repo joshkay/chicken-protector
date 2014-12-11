@@ -25,7 +25,7 @@
             entity.AddComponent(new FollowComponent());
             //entity.AddComponent(new WeaponComponent());
           // entity.AddComponent(new EnemyComponent());
-           entity.AddComponent(new VelocityComponent());
+            entity.AddComponent(new VelocityComponent());
             
             return entity;
         }

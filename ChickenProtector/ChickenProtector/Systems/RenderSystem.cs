@@ -105,6 +105,15 @@ namespace ChickenProtector.Systems
                     {
                         Spider.Render(this.spriteBatch, this.contentManager, transformComponent);
                     }
+                    else if (string.Compare("BloodPool", this.spatialName, StringComparison.InvariantCultureIgnoreCase) == 0)
+                    {
+                        BloodPool.Render(this.spriteBatch, this.contentManager, transformComponent);
+                    }
+                    else if (string.Compare("CrackedEgg", this.spatialName, StringComparison.InvariantCultureIgnoreCase) == 0)
+                    {
+                        CrackedEgg.Render(this.spriteBatch, this.contentManager, transformComponent);
+                    }
+
                 }
             }
         }

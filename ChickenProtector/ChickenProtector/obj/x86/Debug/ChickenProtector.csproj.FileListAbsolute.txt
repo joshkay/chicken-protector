@@ -47,3 +47,5 @@ X:\GitHub\chicken-protector\ChickenProtector\ChickenProtector\bin\x86\Debug\Chic
 X:\GitHub\chicken-protector\ChickenProtector\ChickenProtector\bin\x86\Debug\ChickenProtector.pdb
 X:\GitHub\chicken-protector\ChickenProtector\ChickenProtector\obj\x86\Debug\ChickenProtector.exe
 X:\GitHub\chicken-protector\ChickenProtector\ChickenProtector\obj\x86\Debug\ChickenProtector.pdb
+X:\GitHub\chicken-protector\ChickenProtector\ChickenProtector\bin\x86\Debug\Content\blood.xnb
+X:\GitHub\chicken-protector\ChickenProtector\ChickenProtector\bin\x86\Debug\Content\cracked-egg.xnb

@@ -34,37 +34,37 @@ using ChickenProtector.Templates;
             {
                 for (int shipIndex = 0; ships.Count > shipIndex; ++shipIndex)
                 {
-                    Entity ship = ships.Get(shipIndex);
+                    Entity animal = ships.Get(shipIndex);
                     for (int bulletIndex = 0; bullets.Count > bulletIndex; ++bulletIndex)
                     {
-                        Entity bullet = bullets.Get(bulletIndex);
-                        ProjectileComponent bulletProjectile = bullet.GetComponent<ProjectileComponent>();
+                        Entity egg = bullets.Get(bulletIndex);
+                        ProjectileComponent bulletProjectile = egg.GetComponent<ProjectileComponent>();
 
                         // do not test collision between bullet and shooter
                         if (bulletProjectile.ShooterImmune)
                         {
-                            if (bulletProjectile.ShooterTag == ship.Tag)
+                            if (bulletProjectile.ShooterTag == animal.Tag)
                                 continue;
                         }
 
-                        if (this.CollisionExists(bullet, ship))
+                        if (this.CollisionExists(egg, animal))
                         {
-                            TransformComponent bulletTransform = bullet.GetComponent<TransformComponent>();
-                            Entity bulletExplosion = this.EntityWorld.CreateEntityFromTemplate(BulletExplosionTemplate.Name);
-                            bulletExplosion.GetComponent<TransformComponent>().Position = bulletTransform.Position;
-                            bulletExplosion.Refresh();
-                            bullet.Delete();
+                            TransformComponent bulletTransform = egg.GetComponent<TransformComponent>();
+                            Entity crackedEgg = this.EntityWorld.CreateEntityFromTemplate(EggExplosionTemplate.Name);
+                            crackedEgg.GetComponent<TransformComponent>().Position = bulletTransform.Position;
+                            crackedEgg.Refresh();
+                            egg.Delete();
 
-                            HealthComponent healthComponent = ship.GetComponent<HealthComponent>();
+                            HealthComponent healthComponent = animal.GetComponent<HealthComponent>();
                             healthComponent.AddDamage(4);
 
-                            if  (!healthComponent.IsAlive)
+                            if (!healthComponent.IsAlive)
                             {
-                                TransformComponent shipTransform = ship.GetComponent<TransformComponent>();
-                                Entity shipExplosion = this.EntityWorld.CreateEntityFromTemplate(PlayerExplosionTemplate.Name);
-                                shipExplosion.GetComponent<TransformComponent>().Position = shipTransform.Position;
-                                shipExplosion.Refresh();
-                                ship.Delete();
+                                TransformComponent shipTransform = animal.GetComponent<TransformComponent>();
+                                Entity deadAnimal = this.EntityWorld.CreateEntityFromTemplate(AnimalDeathTemplate.Name);
+                                deadAnimal.GetComponent<TransformComponent>().Position = shipTransform.Position;
+                                deadAnimal.Refresh();
+                                animal.Delete();
                                 break;
                             }
                         }
