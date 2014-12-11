@@ -22,7 +22,7 @@
             entity.AddComponent(new SpatialFormComponent("Mosquito"));
             entity.AddComponent(new VelocityComponent());
             entity.AddComponent(new FollowComponent());
-            entity.AddComponent(new DamageComponent(0.001f));
+            entity.AddComponent(new DamageComponent(0.01f));
 
             return entity;
         }
