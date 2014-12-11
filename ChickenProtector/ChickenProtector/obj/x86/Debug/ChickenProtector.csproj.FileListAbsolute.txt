@@ -34,3 +34,11 @@ X:\GitHub\chicken-protector\ChickenProtector\ChickenProtector\bin\x86\Debug\Cont
 X:\GitHub\chicken-protector\ChickenProtector\ChickenProtector\bin\x86\Debug\Content\barn.xnb
 X:\GitHub\chicken-protector\ChickenProtector\ChickenProtector\bin\x86\Debug\Content\chickenbarn.xnb
 X:\GitHub\chicken-protector\ChickenProtector\ChickenProtector\bin\x86\Debug\Content\popup.xnb
+X:\GitHub\chicken-protector\ChickenProtector\ChickenProtector\bin\x86\Debug\Content\tiles\dirttile.xnb
+X:\GitHub\chicken-protector\ChickenProtector\ChickenProtector\bin\x86\Debug\Content\tiles\grasstile.xnb
+X:\GitHub\chicken-protector\ChickenProtector\ChickenProtector\bin\x86\Debug\Content\tiles\snowtile.xnb
+X:\GitHub\chicken-protector\ChickenProtector\ChickenProtector\bin\x86\Debug\Content\tiles\watertile.xnb
+X:\GitHub\chicken-protector\ChickenProtector\ChickenProtector\bin\x86\Debug\Content\sound\oldmcdonald.xnb
+X:\GitHub\chicken-protector\ChickenProtector\ChickenProtector\bin\x86\Debug\Content\sound\oldmcdonald.wma
+X:\GitHub\chicken-protector\ChickenProtector\ChickenProtector\bin\x86\Debug\Content\sound\poop.xnb
+X:\GitHub\chicken-protector\ChickenProtector\ChickenProtector\bin\x86\Debug\Content\sound\quack.xnb

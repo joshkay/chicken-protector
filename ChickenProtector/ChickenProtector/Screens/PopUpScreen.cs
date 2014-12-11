@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using Microsoft.Xna.Framework;
-using Microsoft.Xna.Framework.Graphics;
+using Microsoft.Xna.Framework.Graphics;
+
 namespace ChickenProtector.Screens
 {
     class PopUpScreen : GameScreen
@@ -55,7 +56,7 @@ namespace ChickenProtector.Screens
 
         public override void Draw(GameTime gameTime)
         {
-            spriteBatch.Draw(image, imageRectangle, Color.White);
+            spriteBatch.Draw(image, imageRectangle, image.Bounds, Color.White, 0, Vector2.Zero, SpriteEffects.None, 0.95f);
             base.Draw(gameTime);
         }
     }

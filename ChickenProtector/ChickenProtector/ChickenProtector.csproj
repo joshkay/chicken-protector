@@ -76,16 +76,19 @@
     <Reference Include="System.Net" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ChickenGame.cs" />
+    <Compile Include="Components\AudioComponent.cs" />
     <Compile Include="Components\EnemyComponent.cs" />
     <Compile Include="Components\ExpiresComponent.cs" />
     <Compile Include="Components\HealthComponent.cs" />
     <Compile Include="Components\ProjectileComponent.cs" />
     <Compile Include="Components\SpatialFormComponent.cs" />
+    <Compile Include="Components\TileMapComponent.cs" />
     <Compile Include="Components\TransformComponent.cs" />
     <Compile Include="Components\VelocityComponent.cs" />
     <Compile Include="Components\WeaponComponent.cs" />
+    <Compile Include="Helper\Timer.cs" />
     <Compile Include="Screens\GameScreen.cs" />
-    <Compile Include="ChickenGame.cs" />
     <Compile Include="Screens\MenuComponent.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Program.cs" />
@@ -94,7 +97,10 @@
     <Compile Include="Screens\StartScreen.cs" />
     <Compile Include="Spatials\Barn.cs" />
     <Compile Include="Spatials\Egg.cs" />
-    <Compile Include="Spatials\PlayerShip.cs" />
+    <Compile Include="Spatials\PlayerChicken.cs" />
+    <Compile Include="Spatials\PoopSound.cs" />
+    <Compile Include="Spatials\QuackSound.cs" />
+    <Compile Include="Spatials\Tiles.cs" />
     <Compile Include="Systems\CollisionSystem.cs" />
     <Compile Include="Systems\EnemyShooterSystem.cs" />
     <Compile Include="Systems\ExpirationSystem.cs" />
@@ -103,6 +109,7 @@
     <Compile Include="Systems\MovementSystem.cs" />
     <Compile Include="Systems\ChickenControlSystem.cs" />
     <Compile Include="Systems\RenderSystem.cs" />
+    <Compile Include="Systems\TileMapRenderSystem.cs" />
     <Compile Include="Templates\BarnTemplate.cs" />
     <Compile Include="Templates\BulletExplosionTemplate.cs" />
     <Compile Include="Templates\EggTemplate.cs" />
@@ -110,6 +117,7 @@
     <Compile Include="Templates\MissileTemplate.cs" />
     <Compile Include="Templates\PlayerExplosionTemplate.cs" />
     <Compile Include="Templates\PlayerTemplate.cs" />
+    <Compile Include="Templates\TileMapTemplate.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Game.ico" />

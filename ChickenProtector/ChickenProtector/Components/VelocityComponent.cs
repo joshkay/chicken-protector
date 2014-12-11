@@ -1,8 +1,7 @@
 ﻿namespace ChickenProtector.Components
 {
-using System;
-using Artemis.Interface;
-
+    using System;
+    using Artemis.Interface;
 
     public class VelocityComponent : IComponent
     {

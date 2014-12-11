@@ -54,7 +54,7 @@ namespace ChickenProtector.Screens
         public override void Draw(GameTime gameTime)
         {
             this.GraphicsDevice.Clear(Color.Black);
-            spriteBatch.Draw(image, imageRectangle, Color.White);
+            spriteBatch.Draw(image, imageRectangle, image.Bounds, Color.White, 0, Vector2.Zero, SpriteEffects.None, 0.0f);
             base.Draw(gameTime);
         }
     }

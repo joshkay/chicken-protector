@@ -10,31 +10,50 @@
     using Artemis.System;
     using Artemis.Utils;
 
+    using Microsoft.Xna.Framework;
+    using Microsoft.Xna.Framework.Content;
     using Microsoft.Xna.Framework.Graphics;
     using Microsoft.Xna.Framework.Input;
 
     using ChickenProtector.Components;
     using ChickenProtector.Templates;
-
+    using ChickenProtector.Spatials;
     #endregion
 
     [ArtemisEntitySystem(GameLoopType = GameLoopType.Update)]
     public class ChickenControlSystem : TagSystem
     {
-        private readonly Timer eggLaunchTimer;
+        private Helper.Timer eggTimer;
+        private const float EGG_TIME = 0.2f;
+
         private GraphicsDevice graphicsDevice;
+        private ContentManager contentManager;
+
+        private bool left, right, up, down;
 
         public ChickenControlSystem()
             : base("PLAYER")
         {
-            this.eggLaunchTimer = new Timer(new TimeSpan(0, 0, 0, 0, 150));
+            left = false;
+            right = false;
+            up = false;
+            down = false;
+
+            eggTimer = new Helper.Timer(EGG_TIME);
         }
+
         public override void LoadContent()
         {
             this.graphicsDevice = BlackBoard.GetEntry<GraphicsDevice>("GraphicsDevice");
+            this.contentManager = BlackBoard.GetEntry<ContentManager>("ContentManager");
         }
 
         public override void Process(Entity entity)
+        {
+            MovePlayer(entity);
+        }
+
+        private void MovePlayer(Entity entity)
         {
             TransformComponent transformComponent = entity.GetComponent<TransformComponent>();
             KeyboardState keyboardState = Keyboard.GetState();
@@ -74,25 +93,45 @@
             }
 
             if (keyboardState.IsKeyDown(Keys.Left))
-            {
-                if (this.eggLaunchTimer.IsReached(this.EntityWorld.Delta))
-                    AddMissile(transformComponent, entity.Tag, 0);
-            }
-            else if (keyboardState.IsKeyDown(Keys.Right))
-            {
-                if (this.eggLaunchTimer.IsReached(this.EntityWorld.Delta))
-                    AddMissile(transformComponent, entity.Tag, 180);
-            }
-            else if (keyboardState.IsKeyDown(Keys.Up))
-            {
-                if (this.eggLaunchTimer.IsReached(this.EntityWorld.Delta))
-                    AddMissile(transformComponent, entity.Tag, 90);
-            }
-            else if (keyboardState.IsKeyDown(Keys.Down))
-            {
-                if (this.eggLaunchTimer.IsReached(this.EntityWorld.Delta))
-                    AddMissile(transformComponent, entity.Tag, -90);
-            }
+                left = true;
+            else
+                left = false;
+
+            if (keyboardState.IsKeyDown(Keys.Right))
+                right = true;
+            else
+                right = false;
+
+            if (keyboardState.IsKeyDown(Keys.Up))
+                up = true;
+            else
+                up = false;
+
+            if (keyboardState.IsKeyDown(Keys.Down))
+                down = true;
+            else
+                down = false;
+
+            float ms = (float)TimeSpan.FromTicks(this.EntityWorld.Delta).Milliseconds / 1000.0f;
+            eggTimer.update(ms);
+
+            if (left || right || up || down)
+                eggTimer.Running = true;
+
+            if (!this.eggTimer.Completed)
+                return;
+
+            if (!(left || right || up || down))
+                return;
+
+            if (left)
+                AddMissile(transformComponent, entity.Tag, 0);
+            else if (right)
+                AddMissile(transformComponent, entity.Tag, 180);
+            else if (up)
+                AddMissile(transformComponent, entity.Tag, 90);
+            else if (down)
+                AddMissile(transformComponent, entity.Tag, -90);
         }
 
         private void AddMissile(TransformComponent transformComponent, string tag, float angle = 90.0f, float offsetX = 0.0f)
@@ -107,6 +146,10 @@
 
             egg.GetComponent<ProjectileComponent>().ShooterTag = tag;
             egg.GetComponent<ProjectileComponent>().ShooterImmune = true;
+
+            PoopSound.PlaySound(contentManager);
+
+            eggTimer.reset();
         }
     }
 }

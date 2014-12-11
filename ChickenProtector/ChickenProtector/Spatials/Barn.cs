@@ -17,7 +17,7 @@
                 barn = contentManager.Load<Texture2D>("barn");
             }
 
-            spriteBatch.Draw(barn, new Vector2(transformComponent.X - (barn.Width * 0.5f), transformComponent.Y - (barn.Height * 0.5f)), barn.Bounds, Color.White);
+            spriteBatch.Draw(barn, new Vector2(transformComponent.X - (barn.Width * 0.5f), transformComponent.Y - (barn.Height * 0.5f)), barn.Bounds, Color.White, 0, Vector2.Zero, 1, SpriteEffects.None, 0.5f);
         }
     }
 }

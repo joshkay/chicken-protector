@@ -150,7 +150,7 @@ namespace StarWarrior
 #endif
 
             this.InitializePlayerShip();
-            this.InitializeEnemyShips();
+           // this.InitializeEnemyShips();
 
             base.Initialize();
         }

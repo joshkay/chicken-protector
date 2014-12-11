@@ -30,6 +30,9 @@ namespace ChickenProtector
         Screens.PlayScreen playScreen;
         Screens.PopUpScreen quitScreen;
 
+        // The music played during gameplay
+        Song gameplayMusic;
+
         public ChickenGame()
         {
             this.graphics = new GraphicsDeviceManager(this)
@@ -101,6 +104,10 @@ namespace ChickenProtector
 
             activeScreen = startScreen;
             activeScreen.Show();
+
+            // Load the music
+            gameplayMusic = Content.Load<Song>("sound/oldmcdonald");
+            PlayMusic(gameplayMusic);
         }
 
         /// <summary>
@@ -201,6 +208,24 @@ namespace ChickenProtector
                 oldGamePadState.IsButtonDown(button);
         }
 
+        private void PlayMusic(Song song)
+        {
+            // Due to the way the MediaPlayer plays music,
+            // we have to catch the exception. Music will play when the game is not tethered
+            try
+            {
+                // Play the music
+                MediaPlayer.Play(song);
+
+                MediaPlayer.Volume = 0.1f;
+
+
+                // Loop the currently playing song
+                MediaPlayer.IsRepeating = true;
+            }
+            catch { }
+        }
+
         /// <summary>
         /// This is called when the game should draw itself.
         /// </summary>
@@ -209,7 +234,7 @@ namespace ChickenProtector
         {
             GraphicsDevice.Clear(Color.Black);
 
-            spriteBatch.Begin();
+            spriteBatch.Begin(SpriteSortMode.FrontToBack, BlendState.AlphaBlend);
 
             if (activeScreen == quitScreen)
                 playScreen.Draw(gameTime);

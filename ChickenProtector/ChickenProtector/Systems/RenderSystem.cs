@@ -44,6 +44,7 @@ namespace ChickenProtector.Systems
     using Artemis.Attributes;
     using Artemis.Manager;
     using Artemis.System;
+    using Artemis.Utils;
 
     using Microsoft.Xna.Framework;
     using Microsoft.Xna.Framework.Content;
@@ -90,7 +91,7 @@ namespace ChickenProtector.Systems
                     ///very naive render ...
                     if (string.Compare("PlayerShip", this.spatialName, StringComparison.InvariantCultureIgnoreCase) == 0)
                     {
-                        PlayerShip.Render(this.spriteBatch, this.contentManager, transformComponent);
+                        PlayerChicken.Render(this.spriteBatch, this.contentManager, transformComponent);
                     }
                     else if (string.Compare("Egg", this.spatialName, StringComparison.InvariantCultureIgnoreCase) == 0)
                     {
