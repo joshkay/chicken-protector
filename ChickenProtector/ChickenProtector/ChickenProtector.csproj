@@ -82,9 +82,11 @@
     <Compile Include="Components\HealthComponent.cs" />
     <Compile Include="Components\ProjectileComponent.cs" />
     <Compile Include="Components\SpatialFormComponent.cs" />
+    <Compile Include="Components\TileMapComponent.cs" />
     <Compile Include="Components\TransformComponent.cs" />
     <Compile Include="Components\VelocityComponent.cs" />
     <Compile Include="Components\WeaponComponent.cs" />
+    <Compile Include="Helper\Timer.cs" />
     <Compile Include="Screens\GameScreen.cs" />
     <Compile Include="ChickenGame.cs" />
     <Compile Include="Screens\MenuComponent.cs" />
@@ -95,8 +97,11 @@
     <Compile Include="Screens\StartScreen.cs" />
     <Compile Include="Spatials\Barn.cs" />
     <Compile Include="Spatials\Egg.cs" />
-    <Compile Include="Spatials\PlayerShip.cs" />
+    <Compile Include="Spatials\PlayerChicken.cs" />
+    <Compile Include="Spatials\PoopSound.cs" />
+    <Compile Include="Spatials\QuackSound.cs" />
     <Compile Include="Spatials\Spider.cs" />
+    <Compile Include="Spatials\Tiles.cs" />
     <Compile Include="Systems\CollisionSystem.cs" />
     <Compile Include="Systems\EnemyShooterSystem.cs" />
     <Compile Include="Systems\EnemySpawnSystem.cs" />
@@ -107,6 +112,7 @@
     <Compile Include="Systems\MovementSystem.cs" />
     <Compile Include="Systems\ChickenControlSystem.cs" />
     <Compile Include="Systems\RenderSystem.cs" />
+    <Compile Include="Systems\TileMapRenderSystem.cs" />
     <Compile Include="Templates\BarnTemplate.cs" />
     <Compile Include="Templates\BulletExplosionTemplate.cs" />
     <Compile Include="Templates\EggTemplate.cs" />
