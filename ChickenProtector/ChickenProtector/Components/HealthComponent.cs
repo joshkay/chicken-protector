@@ -1,11 +1,9 @@
 ﻿namespace ChickenProtector.Components
 {
-using System;
-using Artemis.Interface;
+    using System;
+    using Artemis.Interface;
 
-
-
-     public class HealthComponent : IComponent
+    public class HealthComponent : IComponent
     {
          public HealthComponent()
              : this(0.0f)

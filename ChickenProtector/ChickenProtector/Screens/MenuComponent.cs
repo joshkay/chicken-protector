@@ -154,7 +154,13 @@ namespace ChickenProtector
                     spriteFont,
                     item,
                     location - new Vector2(offset, 0),
-                    normal);
+                    normal,
+                    0,
+                    Vector2.Zero,
+                    1,
+                    SpriteEffects.None,
+                    1.0f
+                );
 
                 location.Y += spriteFont.LineSpacing + 5;
             }
