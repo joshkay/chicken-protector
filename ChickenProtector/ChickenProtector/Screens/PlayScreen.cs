@@ -53,11 +53,7 @@
             EntitySystem.BlackBoard.SetEntry("GraphicsDevice", this.GraphicsDevice);
             EntitySystem.BlackBoard.SetEntry("SpriteBatch", this.spriteBatch);
             EntitySystem.BlackBoard.SetEntry("SpriteFont", this.font);
-<<<<<<< HEAD
             EntitySystem.BlackBoard.SetEntry("EnemyInterval", 1000);
-=======
-            EntitySystem.BlackBoard.SetEntry("EnemyInterval", 850);
->>>>>>> origin/rj
 
 #if XBOX
             this.entityWorld.InitializeAll( System.Reflection.Assembly.GetExecutingAssembly());
@@ -78,6 +74,14 @@
 
         public override void Update(GameTime gameTime)
         {
+            // check for game over
+            if (!entityWorld.TagManager.GetEntity("PLAYER").GetComponent<HealthComponent>().IsAlive ||
+                !entityWorld.TagManager.GetEntity("BARN").GetComponent<HealthComponent>().IsAlive)
+            {
+                ChickenGame chickenGame = (ChickenGame)this.game;
+                chickenGame.QuitGame();
+            }
+
             this.entityWorld.Update();
 
             ++this.frameCounter;
@@ -122,17 +126,20 @@
         private void InitializeChicken()
         {
             Entity entity = this.entityWorld.CreateEntityFromTemplate(PlayerTemplate.Name);
-            entity.GetComponent<TransformComponent>().X = this.GraphicsDevice.Viewport.Width * 0.5f;
+            entity.GetComponent<TransformComponent>().X = this.GraphicsDevice.Viewport.Width * 0.5f + 100;
             entity.GetComponent<TransformComponent>().Y = this.GraphicsDevice.Viewport.Height - 50;
             entity.GetComponent<TransformComponent>().Width = 40;
             entity.GetComponent<TransformComponent>().Height = 64;
         }
+
         private void InitializeMosquito()
         {
             Entity entity = this.entityWorld.CreateEntityFromTemplate(MosquitoTemplate.Name);
             entity.GetComponent<TransformComponent>().X = this.GraphicsDevice.Viewport.Width * 0.5f;
-            entity.GetComponent<TransformComponent>().Y = this.GraphicsDevice.Viewport.Height - 100;
-            entity.GetComponent<VelocityComponent>().Speed = 0.05f;
+            entity.GetComponent<TransformComponent>().Y = this.GraphicsDevice.Viewport.Height * 0.5f;
+            //entity.GetComponent<VelocityComponent>().Speed = 0.0f;
+            entity.GetComponent<TransformComponent>().Width = 30;
+            entity.GetComponent<TransformComponent>().Height = 20;
         }
 
         private void InitializeBarn()
@@ -142,7 +149,6 @@
             entity.GetComponent<TransformComponent>().Y = this.GraphicsDevice.Viewport.Height - 50;
             entity.GetComponent<TransformComponent>().Width = 70;
             entity.GetComponent<TransformComponent>().Height = 70;
-            EntitySystem.BlackBoard.SetEntry("Barn", entity);
         }
     }
 }

@@ -34,7 +34,7 @@
          }
          public float MaximumHealth { get; private set; }
 
-         public void AddDamage(int damage)
+         public void AddDamage(float damage)
          {
              this.Points -= damage;
              if (this.Points < 0)

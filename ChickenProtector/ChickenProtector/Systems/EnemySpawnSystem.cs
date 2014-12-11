@@ -35,7 +35,7 @@
         {
             Entity entity = this.EntityWorld.CreateEntityFromTemplate(EnemyTemplate.Name);
             int num = random.Next(3);
-          //  entity.GetComponent<TransformComponent>().X = this.random.Next(this.spriteBatch.GraphicsDevice.Viewport.Width);
+
             if (num == 0)
             {
                 entity.GetComponent<TransformComponent>().X = -10;
@@ -58,8 +58,8 @@
             entity.GetComponent<TransformComponent>().Height = 20;
 
             entity.GetComponent<VelocityComponent>().Speed = 0.05f;
-            
-            entity.GetComponent<FollowComponent>().Follow = EntitySystem.BlackBoard.GetEntry<Entity>("Barn");
+
+            entity.GetComponent<FollowComponent>().Follow = this.EntityWorld.TagManager.GetEntity("BARN");
         }
     }
 }

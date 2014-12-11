@@ -20,9 +20,9 @@
 
             entity.AddComponentFromPool<TransformComponent>();
             entity.AddComponent(new SpatialFormComponent("Mosquito"));
-            entity.AddComponent(new HealthComponent(10));
             entity.AddComponent(new VelocityComponent());
             entity.AddComponent(new FollowComponent());
+            entity.AddComponent(new DamageComponent(0.001f));
 
             return entity;
         }

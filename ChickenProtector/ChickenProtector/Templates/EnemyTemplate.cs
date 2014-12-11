@@ -1,4 +1,4 @@
-﻿namespace ChickenProtector.Templates
+﻿    namespace ChickenProtector.Templates
 {
     #region Using statements
 

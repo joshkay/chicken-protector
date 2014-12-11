@@ -31,6 +31,7 @@ using ChickenProtector.Templates;
             Bag<Entity> animals = this.EntityWorld.GroupManager.GetEntities("ANIMALS");
             Entity barn = this.EntityWorld.TagManager.GetEntity("BARN");
             Entity player = this.EntityWorld.TagManager.GetEntity("PLAYER");
+            Entity mosquito = this.EntityWorld.TagManager.GetEntity("MOSQUITO");
             
             if (bullets != null && animals != null)
             {
@@ -41,13 +42,19 @@ using ChickenProtector.Templates;
                     // barn and animal
                     if (this.CollisionExists(animal, barn))
                     {
-                        AnimalAndEntity(animal, barn);
+                        SuicideIntoEntity(animal, barn);
                     }
 
                     // player and animal
-                    if (this.CollisionExists(player, animal))
+                    if (this.CollisionExists(animal, player))
                     {
-                        AnimalAndEntity(animal, player);
+                        SuicideIntoEntity(animal, player);
+                    }
+
+                    // player and mosquito
+                    if (this.CollisionExists(animal, mosquito))
+                    {
+                        HurtAnimal(mosquito, animal);
                     }
 
                     // collision between entities
@@ -105,8 +112,13 @@ using ChickenProtector.Templates;
             crackedEgg.Refresh();
             egg.Delete();
 
+            HurtAnimal(egg, animal);
+        }
+
+        private void HurtAnimal(Entity attacker, Entity animal)
+        {
             HealthComponent healthComponent = animal.GetComponent<HealthComponent>();
-            healthComponent.AddDamage(egg.GetComponent<DamageComponent>().Points);
+            healthComponent.AddDamage(attacker.GetComponent<DamageComponent>().Points);
 
             if (!healthComponent.IsAlive)
             {
@@ -135,7 +147,7 @@ using ChickenProtector.Templates;
             //animal1.GetComponent<TransformComponent>().Position = newPosition;
         }
 
-        private void AnimalAndEntity(Entity animal, Entity e)
+        private void SuicideIntoEntity(Entity animal, Entity e)
         {
             //animal.GetComponent<VelocityComponent>().Speed = 0;
 

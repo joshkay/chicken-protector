@@ -6,15 +6,15 @@
     public class DamageComponent : IComponent
     {
         public DamageComponent()
-            : this(0)
+            : this(0.0f)
         {
         }
 
-        public DamageComponent(int points)
+        public DamageComponent(float points)
         {
             this.Points = points;
         }
 
-        public int Points { get; private set; }
+        public float Points { get; private set; }
     }
 }

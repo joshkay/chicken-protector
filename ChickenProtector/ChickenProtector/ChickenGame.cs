@@ -177,6 +177,16 @@ namespace ChickenProtector
             }
         }
 
+        public void QuitGame()
+        {
+            if (activeScreen == playScreen)
+            {
+                activeScreen.Hide();
+                activeScreen = startScreen;
+                activeScreen.Show();
+            }
+        }
+
         private void HandleQuitScreen()
         {
             if (CheckKey(Keys.Enter) || CheckButton(Buttons.A))

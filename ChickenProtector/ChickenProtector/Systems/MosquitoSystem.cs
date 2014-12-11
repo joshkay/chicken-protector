@@ -29,12 +29,33 @@
 
            
         }
+
         public override void Process(Entity entity)
         {
             Bag<Entity> spiders = this.EntityWorld.GroupManager.GetEntities("ANIMALS");
-            if (entity.GetComponent<FollowComponent>().Follow == null )
+
+            if (spiders.Count == 0)
+            { 
+                entity.GetComponent<VelocityComponent>().Speed = 0.0f;
+                return;
+            }
+
+            if (entity.GetComponent<FollowComponent>().Follow == null || !entity.GetComponent<FollowComponent>().Follow.IsActive)
             {
-                entity.GetComponent<FollowComponent>().Follow = spiders.Get(0);
+                Entity closest = spiders.Get(0);
+                Vector2 barn = this.EntityWorld.TagManager.GetEntity("BARN").GetComponent<TransformComponent>().Position;
+
+                foreach (Entity spider in spiders)
+                {
+                    Vector2 pos = spider.GetComponent<TransformComponent>().Position;
+                    if (Vector2.Distance(pos, barn) < Vector2.Distance(closest.GetComponent<TransformComponent>().Position, barn))
+                    {
+                        closest = spider;
+                    }
+                }
+
+                entity.GetComponent<FollowComponent>().Follow = closest;
+                entity.GetComponent<VelocityComponent>().Speed = 0.8f;
             }
         }
     }

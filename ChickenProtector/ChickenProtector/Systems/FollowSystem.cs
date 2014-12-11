@@ -15,19 +15,16 @@
     {
         protected override void Process(Entity entity, FollowComponent followComponent, TransformComponent transformComponent, VelocityComponent velocityComponent)
         {
-            if (followComponent != null)
+            if (followComponent != null && followComponent.Follow != null && followComponent.Follow.IsActive)
             {
                 if (transformComponent != null)
                 {
                     if (velocityComponent != null)
                     {
-                        if (followComponent.Follow != null)
-                        {
-                            Vector2 barn = new Vector2(followComponent.Follow.GetComponent<TransformComponent>().X, followComponent.Follow.GetComponent<TransformComponent>().Y);
-                            Vector2 spider = new Vector2(transformComponent.X, transformComponent.Y);
-                            float angle = (float)Math.Atan2(barn.Y - spider.Y, barn.X - spider.X);
-                            velocityComponent.Angle = MathHelper.ToDegrees(angle);
-                        }
+                        Vector2 follow = new Vector2(followComponent.Follow.GetComponent<TransformComponent>().X, followComponent.Follow.GetComponent<TransformComponent>().Y);
+                        Vector2 pos = new Vector2(transformComponent.X, transformComponent.Y);
+                        float angle = (float)Math.Atan2(follow.Y - pos.Y, follow.X - pos.X);
+                        velocityComponent.Angle = MathHelper.ToDegrees(angle);
                     }
                 }
             }

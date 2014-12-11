@@ -1,6 +1,5 @@
 C:\Users\Josh\GitHub\chicken-protector\ChickenProtector\ChickenProtector\bin\x86\Debug\ChickenProtector.exe
 C:\Users\Josh\GitHub\chicken-protector\ChickenProtector\ChickenProtector\bin\x86\Debug\ChickenProtector.pdb
-C:\Users\Josh\GitHub\chicken-protector\ChickenProtector\ChickenProtector\bin\x86\Debug\artemis.xml
 C:\Users\Josh\GitHub\chicken-protector\ChickenProtector\ChickenProtector\obj\x86\Debug\ChickenProtector.csprojResolveAssemblyReference.cache
 C:\Users\Josh\GitHub\chicken-protector\ChickenProtector\ChickenProtector\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
 C:\Users\Josh\GitHub\chicken-protector\ChickenProtector\ChickenProtector\obj\x86\Debug\ChickenProtector.exe
@@ -15,9 +14,6 @@ E:\XNA\chicken-protector\ChickenProtector\ChickenProtector\obj\x86\Debug\Microso
 E:\XNA\chicken-protector\ChickenProtector\ChickenProtector\obj\x86\Debug\ChickenProtector.exe
 E:\XNA\chicken-protector\ChickenProtector\ChickenProtector\obj\x86\Debug\ChickenProtector.pdb
 C:\Users\Josh\GitHub\chicken-protector\ChickenProtector\ChickenProtector\bin\x86\Debug\Content\menuFont.xnb
-C:\Users\Josh\GitHub\chicken-protector\ChickenProtector\ChickenProtector\bin\x86\Debug\Content\player.xnb
-C:\Users\Josh\GitHub\chicken-protector\ChickenProtector\ChickenProtector\bin\x86\Debug\Content\alienmetal.xnb
-C:\Users\Josh\GitHub\chicken-protector\ChickenProtector\ChickenProtector\bin\x86\Debug\Content\greenmetal.xnb
 C:\Users\Josh\GitHub\chicken-protector\ChickenProtector\ChickenProtector\bin\x86\Debug\Content\chick.xnb
 E:\XNA\chicken-protector\ChickenProtector\ChickenProtector\bin\x86\Debug\Content\menuFont.xnb
 E:\XNA\chicken-protector\ChickenProtector\ChickenProtector\bin\x86\Debug\Content\chick.xnb
@@ -50,3 +46,19 @@ X:\GitHub\chicken-protector\ChickenProtector\ChickenProtector\obj\x86\Debug\Chic
 X:\GitHub\chicken-protector\ChickenProtector\ChickenProtector\bin\x86\Debug\Content\blood.xnb
 X:\GitHub\chicken-protector\ChickenProtector\ChickenProtector\bin\x86\Debug\Content\cracked-egg.xnb
 X:\GitHub\chicken-protector\ChickenProtector\ChickenProtector\obj\x86\Debug\ChickenProtector.csprojResolveAssemblyReference.cache
+C:\Users\Josh\GitHub\chicken-protector\ChickenProtector\ChickenProtector\bin\x86\Debug\Content\egg.xnb
+C:\Users\Josh\GitHub\chicken-protector\ChickenProtector\ChickenProtector\bin\x86\Debug\Content\barn.xnb
+C:\Users\Josh\GitHub\chicken-protector\ChickenProtector\ChickenProtector\bin\x86\Debug\Content\chickenbarn.xnb
+C:\Users\Josh\GitHub\chicken-protector\ChickenProtector\ChickenProtector\bin\x86\Debug\Content\popup.xnb
+C:\Users\Josh\GitHub\chicken-protector\ChickenProtector\ChickenProtector\bin\x86\Debug\Content\spider.xnb
+C:\Users\Josh\GitHub\chicken-protector\ChickenProtector\ChickenProtector\bin\x86\Debug\Content\tiles\dirttile.xnb
+C:\Users\Josh\GitHub\chicken-protector\ChickenProtector\ChickenProtector\bin\x86\Debug\Content\tiles\grasstile.xnb
+C:\Users\Josh\GitHub\chicken-protector\ChickenProtector\ChickenProtector\bin\x86\Debug\Content\tiles\snowtile.xnb
+C:\Users\Josh\GitHub\chicken-protector\ChickenProtector\ChickenProtector\bin\x86\Debug\Content\tiles\watertile.xnb
+C:\Users\Josh\GitHub\chicken-protector\ChickenProtector\ChickenProtector\bin\x86\Debug\Content\blood.xnb
+C:\Users\Josh\GitHub\chicken-protector\ChickenProtector\ChickenProtector\bin\x86\Debug\Content\cracked-egg.xnb
+C:\Users\Josh\GitHub\chicken-protector\ChickenProtector\ChickenProtector\bin\x86\Debug\Content\mosquito.xnb
+C:\Users\Josh\GitHub\chicken-protector\ChickenProtector\ChickenProtector\bin\x86\Debug\Content\sound\oldmcdonald.xnb
+C:\Users\Josh\GitHub\chicken-protector\ChickenProtector\ChickenProtector\bin\x86\Debug\Content\sound\poop.xnb
+C:\Users\Josh\GitHub\chicken-protector\ChickenProtector\ChickenProtector\bin\x86\Debug\Content\sound\quack.xnb
+C:\Users\Josh\GitHub\chicken-protector\ChickenProtector\ChickenProtector\bin\x86\Debug\Content\sound\oldmcdonald.wma

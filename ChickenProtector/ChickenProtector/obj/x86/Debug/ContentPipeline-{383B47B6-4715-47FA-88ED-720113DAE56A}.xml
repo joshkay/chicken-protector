@@ -7,8 +7,8 @@
       <Importer>FontDescriptionImporter</Importer>
       <Processor>FontDescriptionProcessor</Processor>
       <Options>None</Options>
-      <Output>X:\GitHub\chicken-protector\ChickenProtector\ChickenProtector\bin\x86\Debug\Content\myFont.xnb</Output>
-      <Time>2014-12-10T19:42:50.9543039-05:00</Time>
+      <Output>C:\Users\Josh\GitHub\chicken-protector\ChickenProtector\ChickenProtector\bin\x86\Debug\Content\myFont.xnb</Output>
+      <Time>2014-12-10T06:11:17.8488061-05:00</Time>
     </Item>
     <Item>
       <Source>menuFont.spritefont</Source>
@@ -16,8 +16,8 @@
       <Importer>FontDescriptionImporter</Importer>
       <Processor>FontDescriptionProcessor</Processor>
       <Options>None</Options>
-      <Output>X:\GitHub\chicken-protector\ChickenProtector\ChickenProtector\bin\x86\Debug\Content\menuFont.xnb</Output>
-      <Time>2014-12-10T20:01:04.458819-05:00</Time>
+      <Output>C:\Users\Josh\GitHub\chicken-protector\ChickenProtector\ChickenProtector\bin\x86\Debug\Content\menuFont.xnb</Output>
+      <Time>2014-12-10T23:59:59.4836149-05:00</Time>
     </Item>
     <Item>
       <Source>chick.png</Source>
@@ -25,8 +25,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>X:\GitHub\chicken-protector\ChickenProtector\ChickenProtector\bin\x86\Debug\Content\chick.xnb</Output>
-      <Time>2014-12-10T20:01:04.4548172-05:00</Time>
+      <Output>C:\Users\Josh\GitHub\chicken-protector\ChickenProtector\ChickenProtector\bin\x86\Debug\Content\chick.xnb</Output>
+      <Time>2014-12-10T23:59:59.4726071-05:00</Time>
     </Item>
     <Item>
       <Source>egg.png</Source>
@@ -34,8 +34,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>X:\GitHub\chicken-protector\ChickenProtector\ChickenProtector\bin\x86\Debug\Content\egg.xnb</Output>
-      <Time>2014-12-10T21:17:00.1797001-05:00</Time>
+      <Output>C:\Users\Josh\GitHub\chicken-protector\ChickenProtector\ChickenProtector\bin\x86\Debug\Content\egg.xnb</Output>
+      <Time>2014-12-10T23:59:59.4796116-05:00</Time>
     </Item>
     <Item>
       <Source>barn.png</Source>
@@ -43,8 +43,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>X:\GitHub\chicken-protector\ChickenProtector\ChickenProtector\bin\x86\Debug\Content\barn.xnb</Output>
-      <Time>2014-12-10T20:01:04.4548172-05:00</Time>
+      <Output>C:\Users\Josh\GitHub\chicken-protector\ChickenProtector\ChickenProtector\bin\x86\Debug\Content\barn.xnb</Output>
+      <Time>2014-12-10T23:59:59.4706052-05:00</Time>
     </Item>
     <Item>
       <Source>chickenbarn.jpg</Source>
@@ -52,8 +52,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>X:\GitHub\chicken-protector\ChickenProtector\ChickenProtector\bin\x86\Debug\Content\chickenbarn.xnb</Output>
-      <Time>2014-12-10T20:01:04.4578187-05:00</Time>
+      <Output>C:\Users\Josh\GitHub\chicken-protector\ChickenProtector\ChickenProtector\bin\x86\Debug\Content\chickenbarn.xnb</Output>
+      <Time>2014-12-10T23:59:59.4776102-05:00</Time>
     </Item>
     <Item>
       <Source>popup.png</Source>
@@ -61,8 +61,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>X:\GitHub\chicken-protector\ChickenProtector\ChickenProtector\bin\x86\Debug\Content\popup.xnb</Output>
-      <Time>2014-12-10T20:01:04.4628215-05:00</Time>
+      <Output>C:\Users\Josh\GitHub\chicken-protector\ChickenProtector\ChickenProtector\bin\x86\Debug\Content\popup.xnb</Output>
+      <Time>2014-12-10T23:59:59.5036282-05:00</Time>
     </Item>
     <Item>
       <Source>spider.png</Source>
@@ -70,8 +70,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>X:\GitHub\chicken-protector\ChickenProtector\ChickenProtector\bin\x86\Debug\Content\spider.xnb</Output>
-      <Time>2014-12-10T20:01:04.4958372-05:00</Time>
+      <Output>C:\Users\Josh\GitHub\chicken-protector\ChickenProtector\ChickenProtector\bin\x86\Debug\Content\spider.xnb</Output>
+      <Time>2014-12-10T23:59:59.5656731-05:00</Time>
     </Item>
     <Item>
       <Source>tiles\dirttile.png</Source>
@@ -79,8 +79,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>X:\GitHub\chicken-protector\ChickenProtector\ChickenProtector\bin\x86\Debug\Content\tiles\dirttile.xnb</Output>
-      <Time>2014-12-10T20:01:04.4978384-05:00</Time>
+      <Output>C:\Users\Josh\GitHub\chicken-protector\ChickenProtector\ChickenProtector\bin\x86\Debug\Content\tiles\dirttile.xnb</Output>
+      <Time>2014-12-10T23:59:59.5686752-05:00</Time>
     </Item>
     <Item>
       <Source>tiles\grasstile.png</Source>
@@ -88,8 +88,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>X:\GitHub\chicken-protector\ChickenProtector\ChickenProtector\bin\x86\Debug\Content\tiles\grasstile.xnb</Output>
-      <Time>2014-12-10T20:01:04.498839-05:00</Time>
+      <Output>C:\Users\Josh\GitHub\chicken-protector\ChickenProtector\ChickenProtector\bin\x86\Debug\Content\tiles\grasstile.xnb</Output>
+      <Time>2014-12-10T23:59:59.569676-05:00</Time>
     </Item>
     <Item>
       <Source>tiles\snowtile.png</Source>
@@ -97,8 +97,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>X:\GitHub\chicken-protector\ChickenProtector\ChickenProtector\bin\x86\Debug\Content\tiles\snowtile.xnb</Output>
-      <Time>2014-12-10T20:01:04.498839-05:00</Time>
+      <Output>C:\Users\Josh\GitHub\chicken-protector\ChickenProtector\ChickenProtector\bin\x86\Debug\Content\tiles\snowtile.xnb</Output>
+      <Time>2014-12-10T23:59:59.5706762-05:00</Time>
     </Item>
     <Item>
       <Source>tiles\watertile.png</Source>
@@ -106,36 +106,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>X:\GitHub\chicken-protector\ChickenProtector\ChickenProtector\bin\x86\Debug\Content\tiles\watertile.xnb</Output>
-      <Time>2014-12-10T20:01:04.4998402-05:00</Time>
-    </Item>
-    <Item>
-      <Source>sound\oldmcdonald.mp3</Source>
-      <Name>sound\oldmcdonald</Name>
-      <Importer>Mp3Importer</Importer>
-      <Processor>SongProcessor</Processor>
-      <Options>None</Options>
-      <Output>X:\GitHub\chicken-protector\ChickenProtector\ChickenProtector\bin\x86\Debug\Content\sound\oldmcdonald.xnb</Output>
-      <Extra>X:\GitHub\chicken-protector\ChickenProtector\ChickenProtector\bin\x86\Debug\Content\sound\oldmcdonald.wma</Extra>
-      <Time>2014-12-10T20:01:04.4898344-05:00</Time>
-    </Item>
-    <Item>
-      <Source>sound\poop.wav</Source>
-      <Name>sound\poop</Name>
-      <Importer>WavImporter</Importer>
-      <Processor>SoundEffectProcessor</Processor>
-      <Options>None</Options>
-      <Output>X:\GitHub\chicken-protector\ChickenProtector\ChickenProtector\bin\x86\Debug\Content\sound\poop.xnb</Output>
-      <Time>2014-12-10T20:01:04.4928359-05:00</Time>
-    </Item>
-    <Item>
-      <Source>sound\quack.wav</Source>
-      <Name>sound\quack</Name>
-      <Importer>WavImporter</Importer>
-      <Processor>SoundEffectProcessor</Processor>
-      <Options>None</Options>
-      <Output>X:\GitHub\chicken-protector\ChickenProtector\ChickenProtector\bin\x86\Debug\Content\sound\quack.xnb</Output>
-      <Time>2014-12-10T20:01:04.4948369-05:00</Time>
+      <Output>C:\Users\Josh\GitHub\chicken-protector\ChickenProtector\ChickenProtector\bin\x86\Debug\Content\tiles\watertile.xnb</Output>
+      <Time>2014-12-10T23:59:59.5716774-05:00</Time>
     </Item>
     <Item>
       <Source>blood.png</Source>
@@ -143,8 +115,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>X:\GitHub\chicken-protector\ChickenProtector\ChickenProtector\bin\x86\Debug\Content\blood.xnb</Output>
-      <Time>2014-12-10T20:32:04.2959718-05:00</Time>
+      <Output>C:\Users\Josh\GitHub\chicken-protector\ChickenProtector\ChickenProtector\bin\x86\Debug\Content\blood.xnb</Output>
+      <Time>2014-12-10T23:59:59.4716063-05:00</Time>
     </Item>
     <Item>
       <Source>cracked-egg.png</Source>
@@ -152,8 +124,45 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>X:\GitHub\chicken-protector\ChickenProtector\ChickenProtector\bin\x86\Debug\Content\cracked-egg.xnb</Output>
-      <Time>2014-12-10T20:32:04.2959718-05:00</Time>
+      <Output>C:\Users\Josh\GitHub\chicken-protector\ChickenProtector\ChickenProtector\bin\x86\Debug\Content\cracked-egg.xnb</Output>
+      <Time>2014-12-10T23:59:59.4786109-05:00</Time>
+    </Item>
+    <Item>
+      <Source>mosquito.PNG</Source>
+      <Name>mosquito</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Josh\GitHub\chicken-protector\ChickenProtector\ChickenProtector\bin\x86\Debug\Content\mosquito.xnb</Output>
+      <Time>2014-12-10T22:19:43-05:00</Time>
+    </Item>
+    <Item>
+      <Source>sound\oldmcdonald.mp3</Source>
+      <Name>sound\oldmcdonald</Name>
+      <Importer>Mp3Importer</Importer>
+      <Processor>SongProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Josh\GitHub\chicken-protector\ChickenProtector\ChickenProtector\bin\x86\Debug\Content\sound\oldmcdonald.xnb</Output>
+      <Extra>C:\Users\Josh\GitHub\chicken-protector\ChickenProtector\ChickenProtector\bin\x86\Debug\Content\sound\oldmcdonald.wma</Extra>
+      <Time>2014-12-10T23:59:59.5566667-05:00</Time>
+    </Item>
+    <Item>
+      <Source>sound\poop.wav</Source>
+      <Name>sound\poop</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Josh\GitHub\chicken-protector\ChickenProtector\ChickenProtector\bin\x86\Debug\Content\sound\poop.xnb</Output>
+      <Time>2014-12-10T23:59:59.5606696-05:00</Time>
+    </Item>
+    <Item>
+      <Source>sound\quack.wav</Source>
+      <Name>sound\quack</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Josh\GitHub\chicken-protector\ChickenProtector\ChickenProtector\bin\x86\Debug\Content\sound\quack.xnb</Output>
+      <Time>2014-12-10T23:59:59.5646733-05:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
@@ -162,10 +171,10 @@
       <TargetProfile>Reach</TargetProfile>
       <BuildConfiguration>Debug</BuildConfiguration>
       <CompressContent>false</CompressContent>
-      <RootDirectory>X:\GitHub\chicken-protector\ChickenProtector\ChickenProtectorContent\</RootDirectory>
-      <LoggerRootDirectory>X:\GitHub\chicken-protector\ChickenProtector\ChickenProtector\</LoggerRootDirectory>
-      <IntermediateDirectory>X:\GitHub\chicken-protector\ChickenProtector\ChickenProtector\obj\x86\Debug\</IntermediateDirectory>
-      <OutputDirectory>X:\GitHub\chicken-protector\ChickenProtector\ChickenProtector\bin\x86\Debug\Content\</OutputDirectory>
+      <RootDirectory>C:\Users\Josh\GitHub\chicken-protector\ChickenProtector\ChickenProtectorContent\</RootDirectory>
+      <LoggerRootDirectory>C:\Users\Josh\GitHub\chicken-protector\ChickenProtector\ChickenProtector\</LoggerRootDirectory>
+      <IntermediateDirectory>C:\Users\Josh\GitHub\chicken-protector\ChickenProtector\ChickenProtector\obj\x86\Debug\</IntermediateDirectory>
+      <OutputDirectory>C:\Users\Josh\GitHub\chicken-protector\ChickenProtector\ChickenProtector\bin\x86\Debug\Content\</OutputDirectory>
     </Settings>
     <Assemblies>
       <Assembly>
@@ -193,8 +202,8 @@
         <Value>2011-09-01T17:22:30-04:00</Value>
       </Assembly>
       <Assembly>
-        <Key>C:\WINDOWS\Microsoft.Net\assembly\GAC_32\Microsoft.Xna.Framework.Content.Pipeline\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.Content.Pipeline.dll</Key>
-        <Value>2014-11-02T16:11:33.1870952-05:00</Value>
+        <Key>C:\windows\Microsoft.Net\assembly\GAC_32\Microsoft.Xna.Framework.Content.Pipeline\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.Content.Pipeline.dll</Key>
+        <Value>2014-11-02T14:47:21.1236404-05:00</Value>
       </Assembly>
     </Assemblies>
   </Asset>
