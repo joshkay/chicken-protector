@@ -17,7 +17,7 @@
 
         public Entity BuildEntity(Entity entity, EntityWorld entityWorld, params object[] args)
         {
-            entity.Group = "ANIMALS";
+            //entity.Group = "ANIMALS";
 
             entity.AddComponentFromPool<TransformComponent>();
             entity.AddComponent(new SpatialFormComponent("PlayerShip"));
