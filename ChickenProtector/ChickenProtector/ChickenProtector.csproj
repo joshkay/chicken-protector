@@ -80,6 +80,7 @@
     <Compile Include="Components\EnemyComponent.cs" />
     <Compile Include="Components\ExpiresComponent.cs" />
     <Compile Include="Components\FollowComponent.cs" />
+    <Compile Include="Components\FollowSpiderComponent.cs" />
     <Compile Include="Components\HealthComponent.cs" />
     <Compile Include="Components\ProjectileComponent.cs" />
     <Compile Include="Components\SpatialFormComponent.cs" />
@@ -100,6 +101,7 @@
     <Compile Include="Spatials\BloodPool.cs" />
     <Compile Include="Spatials\CrackedEgg.cs" />
     <Compile Include="Spatials\Egg.cs" />
+    <Compile Include="Spatials\Mosquito.cs" />
     <Compile Include="Spatials\PlayerChicken.cs" />
     <Compile Include="Spatials\PoopSound.cs" />
     <Compile Include="Spatials\QuackSound.cs" />
@@ -109,6 +111,7 @@
     <Compile Include="Systems\EnemyShooterSystem.cs" />
     <Compile Include="Systems\EnemySpawnSystem.cs" />
     <Compile Include="Systems\ExpirationSystem.cs" />
+    <Compile Include="Systems\MosquitoSystem.cs" />
     <Compile Include="Systems\FollowSystem.cs" />
     <Compile Include="Systems\HealthRenderSystem.cs" />
     <Compile Include="Systems\HudRenderSystem.cs" />
@@ -122,6 +125,7 @@
     <Compile Include="Templates\EnemyTemplate.cs" />
     <Compile Include="Templates\MissileTemplate.cs" />
     <Compile Include="Templates\AnimalDeathTemplate.cs" />
+    <Compile Include="Templates\MosquitoTemplate.cs" />
     <Compile Include="Templates\PlayerTemplate.cs" />
     <Compile Include="Templates\TileMapTemplate.cs" />
   </ItemGroup>

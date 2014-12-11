@@ -58,6 +58,7 @@
             entity.GetComponent<TransformComponent>().Height = 20;
 
             entity.GetComponent<VelocityComponent>().Speed = 0.05f;
+            
             entity.GetComponent<FollowComponent>().Follow = EntitySystem.BlackBoard.GetEntry<Entity>("Barn");
         }
     }
