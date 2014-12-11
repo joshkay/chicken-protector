@@ -120,6 +120,7 @@
     <Compile Include="Templates\MissileTemplate.cs" />
     <Compile Include="Templates\PlayerExplosionTemplate.cs" />
     <Compile Include="Templates\PlayerTemplate.cs" />
+    <Compile Include="Templates\TileMapTemplate.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Game.ico" />

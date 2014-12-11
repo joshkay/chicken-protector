@@ -61,6 +61,7 @@
             this.entityWorld.InitializeAll(true);
 #endif
 
+            InitializeTileMap();
             InitializeBarn();
             InitializeChicken();
         }
@@ -91,20 +92,27 @@
             string entityCount = string.Format("Active entities: {0}", this.entityWorld.EntityManager.ActiveEntities.Count);
             string removedEntityCount = string.Format("Removed entities: {0}", this.entityWorld.EntityManager.TotalRemoved);
             string totalEntityCount = string.Format("Total entities: {0}", this.entityWorld.EntityManager.TotalCreated);
+            string delta = string.Format("Delta: {0}", gameTime.ElapsedGameTime);
 #endif
 
             this.GraphicsDevice.Clear(Color.Black);
             //this.spriteBatch.Begin();
             this.entityWorld.Draw();
-            this.spriteBatch.DrawString(this.font, fps, new Vector2(32, 32), Color.Yellow);
+            this.spriteBatch.DrawString(this.font, fps, new Vector2(32, 32), Color.Yellow, 0, Vector2.Zero, 1, SpriteEffects.None, 1.0f);
 #if DEBUG
-            this.spriteBatch.DrawString(this.font, entityCount, new Vector2(32, 62), Color.Yellow);
-            this.spriteBatch.DrawString(this.font, removedEntityCount, new Vector2(32, 92), Color.Yellow);
-            this.spriteBatch.DrawString(this.font, totalEntityCount, new Vector2(32, 122), Color.Yellow);
+            this.spriteBatch.DrawString(this.font, entityCount, new Vector2(32, 62), Color.Yellow, 0, Vector2.Zero, 1, SpriteEffects.None, 1.0f);
+            this.spriteBatch.DrawString(this.font, removedEntityCount, new Vector2(32, 92), Color.Yellow, 0, Vector2.Zero, 1, SpriteEffects.None, 1.0f);
+            this.spriteBatch.DrawString(this.font, totalEntityCount, new Vector2(32, 122), Color.Yellow, 0, Vector2.Zero, 1, SpriteEffects.None, 1.0f);
+            this.spriteBatch.DrawString(this.font, delta, new Vector2(32, 152), Color.Yellow, 0, Vector2.Zero, 1, SpriteEffects.None, 1.0f);
 #endif
             //this.spriteBatch.End();
 
             base.Draw(gameTime);
+        }
+
+        private void InitializeTileMap()
+        {
+            Entity entity = this.entityWorld.CreateEntityFromTemplate(TileMapTemplate.Name);
         }
 
         private void InitializeChicken()
