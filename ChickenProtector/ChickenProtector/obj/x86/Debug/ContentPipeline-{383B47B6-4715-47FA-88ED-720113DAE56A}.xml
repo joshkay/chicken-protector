@@ -35,7 +35,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>X:\GitHub\chicken-protector\ChickenProtector\ChickenProtector\bin\x86\Debug\Content\egg.xnb</Output>
-      <Time>2014-12-10T20:01:04.458819-05:00</Time>
+      <Time>2014-12-10T21:17:00.1797001-05:00</Time>
     </Item>
     <Item>
       <Source>barn.png</Source>
@@ -144,7 +144,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>X:\GitHub\chicken-protector\ChickenProtector\ChickenProtector\bin\x86\Debug\Content\blood.xnb</Output>
-      <Time>2014-12-10T20:12:02.8092909-05:00</Time>
+      <Time>2014-12-10T20:32:04.2959718-05:00</Time>
     </Item>
     <Item>
       <Source>cracked-egg.png</Source>
@@ -153,7 +153,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>X:\GitHub\chicken-protector\ChickenProtector\ChickenProtector\bin\x86\Debug\Content\cracked-egg.xnb</Output>
-      <Time>2014-12-10T20:12:02.8102912-05:00</Time>
+      <Time>2014-12-10T20:32:04.2959718-05:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>

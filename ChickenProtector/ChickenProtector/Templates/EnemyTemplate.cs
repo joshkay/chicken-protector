@@ -24,8 +24,9 @@
             entity.AddComponent(new HealthComponent(10));
             entity.AddComponent(new FollowComponent());
             //entity.AddComponent(new WeaponComponent());
-          // entity.AddComponent(new EnemyComponent());
+            //entity.AddComponent(new EnemyComponent());
             entity.AddComponent(new VelocityComponent());
+            entity.AddComponent(new DamageComponent(1));
             
             return entity;
         }

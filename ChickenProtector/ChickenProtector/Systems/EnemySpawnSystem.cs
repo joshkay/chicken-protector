@@ -53,7 +53,9 @@
                 entity.GetComponent<TransformComponent>().X = (this.spriteBatch.GraphicsDevice.Viewport.Width) + 10;
                 entity.GetComponent<TransformComponent>().Y = this.random.Next(this.spriteBatch.GraphicsDevice.Viewport.Height);
             }
-            
+
+            entity.GetComponent<TransformComponent>().Width = 36;
+            entity.GetComponent<TransformComponent>().Height = 20;
 
             entity.GetComponent<VelocityComponent>().Speed = 0.05f;
             entity.GetComponent<FollowComponent>().Follow = EntitySystem.BlackBoard.GetEntry<Entity>("Barn");

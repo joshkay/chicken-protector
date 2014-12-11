@@ -90,6 +90,25 @@ namespace ChickenProtector.Components
             }
         }
 
+        public Rectangle Bounds
+        {
+            get
+            {
+                return new Rectangle(
+                    (int)(this.X - this.Width / 2),
+                    (int)(this.Y - this.Height / 2),
+                    (int)this.Width, (int)this.Height
+                );
+            }
+            set
+            {
+                this.X = value.X;
+                this.Y = value.Y;
+                this.Width = value.Width;
+                this.Height = value.Height;
+            }
+        }
+
         public float Width { get; set; }
         public float Height { get; set; }
 

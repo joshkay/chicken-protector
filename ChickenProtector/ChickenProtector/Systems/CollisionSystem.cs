@@ -28,13 +28,43 @@ using ChickenProtector.Templates;
         protected override void ProcessEntities(IDictionary<int, Entity> entities)
         {
             Bag<Entity> bullets = this.EntityWorld.GroupManager.GetEntities("BULLETS");
-            Bag<Entity> ships = this.EntityWorld.GroupManager.GetEntities("ANIMALS");
-
-            if (bullets != null && ships != null)
+            Bag<Entity> animals = this.EntityWorld.GroupManager.GetEntities("ANIMALS");
+            Entity barn = this.EntityWorld.TagManager.GetEntity("BARN");
+            Entity player = this.EntityWorld.TagManager.GetEntity("PLAYER");
+            
+            if (bullets != null && animals != null)
             {
-                for (int shipIndex = 0; ships.Count > shipIndex; ++shipIndex)
+                for (int animalIndex = 0; animals.Count > animalIndex; ++animalIndex)
                 {
-                    Entity animal = ships.Get(shipIndex);
+                    Entity animal = animals.Get(animalIndex);
+                    
+                    // barn and animal
+                    if (this.CollisionExists(animal, barn))
+                    {
+                        AnimalAndEntity(animal, barn);
+                    }
+
+                    // player and animal
+                    if (this.CollisionExists(player, animal))
+                    {
+                        AnimalAndEntity(animal, player);
+                    }
+
+                    // collision between entities
+                    for (int animalIndex2 = 0; animals.Count > animalIndex2; ++animalIndex2)
+                    {
+                        if (animalIndex == animalIndex2)
+                            continue;
+
+                        Entity animal2 = animals.Get(animalIndex2);
+
+                        if (this.CollisionExists(animal, animal2))
+                        {
+                            AnimalAndAnimal(animal, animal2);
+                        }
+                    }
+
+                    // collision between projectiles and entities
                     for (int bulletIndex = 0; bullets.Count > bulletIndex; ++bulletIndex)
                     {
                         Entity egg = bullets.Get(bulletIndex);
@@ -49,24 +79,7 @@ using ChickenProtector.Templates;
 
                         if (this.CollisionExists(egg, animal))
                         {
-                            TransformComponent bulletTransform = egg.GetComponent<TransformComponent>();
-                            Entity crackedEgg = this.EntityWorld.CreateEntityFromTemplate(EggExplosionTemplate.Name);
-                            crackedEgg.GetComponent<TransformComponent>().Position = bulletTransform.Position;
-                            crackedEgg.Refresh();
-                            egg.Delete();
-
-                            HealthComponent healthComponent = animal.GetComponent<HealthComponent>();
-                            healthComponent.AddDamage(4);
-
-                            if (!healthComponent.IsAlive)
-                            {
-                                TransformComponent shipTransform = animal.GetComponent<TransformComponent>();
-                                Entity deadAnimal = this.EntityWorld.CreateEntityFromTemplate(AnimalDeathTemplate.Name);
-                                deadAnimal.GetComponent<TransformComponent>().Position = shipTransform.Position;
-                                deadAnimal.Refresh();
-                                animal.Delete();
-                                break;
-                            }
+                            EggAndAnimal(egg, animal);
                         }
                     }
                 }
@@ -75,7 +88,66 @@ using ChickenProtector.Templates;
 
         private bool CollisionExists(Entity entity1, Entity entity2)
         {
-            return Vector2.Distance(entity1.GetComponent<TransformComponent>().Position, entity2.GetComponent<TransformComponent>().Position) < 20;
+            Rectangle first = entity1.GetComponent<TransformComponent>().Bounds;
+            Rectangle second = entity2.GetComponent<TransformComponent>().Bounds;
+
+            if (first.Intersects(second))
+                return true;
+
+            return false;
+        }
+
+        private void EggAndAnimal(Entity egg, Entity animal)
+        {
+            TransformComponent bulletTransform = egg.GetComponent<TransformComponent>();
+            Entity crackedEgg = this.EntityWorld.CreateEntityFromTemplate(EggExplosionTemplate.Name);
+            crackedEgg.GetComponent<TransformComponent>().Position = bulletTransform.Position;
+            crackedEgg.Refresh();
+            egg.Delete();
+
+            HealthComponent healthComponent = animal.GetComponent<HealthComponent>();
+            healthComponent.AddDamage(egg.GetComponent<DamageComponent>().Points);
+
+            if (!healthComponent.IsAlive)
+            {
+                TransformComponent animalTransform = animal.GetComponent<TransformComponent>();
+                Entity deadAnimal = this.EntityWorld.CreateEntityFromTemplate(AnimalDeathTemplate.Name);
+                deadAnimal.GetComponent<TransformComponent>().Position = animalTransform.Position;
+                deadAnimal.Refresh();
+                animal.Delete();
+            }
+        }
+
+        private void AnimalAndAnimal(Entity animal1, Entity animal2)
+        {
+            //Vector2 newPosition = animal1.GetComponent<TransformComponent>().Position;
+            //Vector2 velocity = animal1.GetComponent<VelocityComponent>().Velocity;
+
+            //if (velocity.X > 0)
+            //    newPosition.X = animal2.GetComponent<TransformComponent>().Bounds.Left - animal2.GetComponent<TransformComponent>().Width / 2;
+            //else if (velocity.X < 0)
+            //    newPosition.X = animal2.GetComponent<TransformComponent>().Bounds.Right + animal2.GetComponent<TransformComponent>().Width / 2;
+            //if (velocity.Y > 0)
+            //    newPosition.Y = animal2.GetComponent<TransformComponent>().Bounds.Top - animal2.GetComponent<TransformComponent>().Height / 2;
+            //else if (velocity.Y < 0)
+            //    newPosition.Y = animal2.GetComponent<TransformComponent>().Bounds.Bottom + animal2.GetComponent<TransformComponent>().Height / 2;
+
+            //animal1.GetComponent<TransformComponent>().Position = newPosition;
+        }
+
+        private void AnimalAndEntity(Entity animal, Entity e)
+        {
+            //animal.GetComponent<VelocityComponent>().Speed = 0;
+
+            HealthComponent healthComponent = e.GetComponent<HealthComponent>();
+            healthComponent.AddDamage(animal.GetComponent<DamageComponent>().Points);
+
+            TransformComponent animalTransform = animal.GetComponent<TransformComponent>();
+            Entity deadAnimal = this.EntityWorld.CreateEntityFromTemplate(AnimalDeathTemplate.Name);
+            deadAnimal.GetComponent<TransformComponent>().Position = animalTransform.Position;
+            deadAnimal.Refresh();
+
+            animal.Delete();
         }
     }
 }

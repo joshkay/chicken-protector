@@ -76,6 +76,7 @@
     <Reference Include="System.Net" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Components\DamageComponent.cs" />
     <Compile Include="Components\EnemyComponent.cs" />
     <Compile Include="Components\ExpiresComponent.cs" />
     <Compile Include="Components\FollowComponent.cs" />

@@ -53,7 +53,7 @@
             EntitySystem.BlackBoard.SetEntry("GraphicsDevice", this.GraphicsDevice);
             EntitySystem.BlackBoard.SetEntry("SpriteBatch", this.spriteBatch);
             EntitySystem.BlackBoard.SetEntry("SpriteFont", this.font);
-            EntitySystem.BlackBoard.SetEntry("EnemyInterval", 500);
+            EntitySystem.BlackBoard.SetEntry("EnemyInterval", 1000);
 
 #if XBOX
             this.entityWorld.InitializeAll( System.Reflection.Assembly.GetExecutingAssembly());
@@ -96,7 +96,7 @@
 #endif
 
             this.GraphicsDevice.Clear(Color.Black);
-            //this.spriteBatch.Begin();
+
             this.entityWorld.Draw();
             this.spriteBatch.DrawString(this.font, fps, new Vector2(32, 32), Color.Yellow, 0, Vector2.Zero, 1, SpriteEffects.None, 1.0f);
 #if DEBUG
@@ -105,7 +105,6 @@
             this.spriteBatch.DrawString(this.font, totalEntityCount, new Vector2(32, 122), Color.Yellow, 0, Vector2.Zero, 1, SpriteEffects.None, 1.0f);
             this.spriteBatch.DrawString(this.font, delta, new Vector2(32, 152), Color.Yellow, 0, Vector2.Zero, 1, SpriteEffects.None, 1.0f);
 #endif
-            //this.spriteBatch.End();
 
             base.Draw(gameTime);
         }
@@ -120,6 +119,8 @@
             Entity entity = this.entityWorld.CreateEntityFromTemplate(PlayerTemplate.Name);
             entity.GetComponent<TransformComponent>().X = this.GraphicsDevice.Viewport.Width * 0.5f;
             entity.GetComponent<TransformComponent>().Y = this.GraphicsDevice.Viewport.Height - 50;
+            entity.GetComponent<TransformComponent>().Width = 40;
+            entity.GetComponent<TransformComponent>().Height = 64;
         }
 
         private void InitializeBarn()
@@ -127,6 +128,8 @@
             Entity entity = this.entityWorld.CreateEntityFromTemplate(BarnTemplate.Name);
             entity.GetComponent<TransformComponent>().X = this.GraphicsDevice.Viewport.Width * 0.5f;
             entity.GetComponent<TransformComponent>().Y = this.GraphicsDevice.Viewport.Height - 50;
+            entity.GetComponent<TransformComponent>().Width = 70;
+            entity.GetComponent<TransformComponent>().Height = 70;
             EntitySystem.BlackBoard.SetEntry("Barn", entity);
         }
     }

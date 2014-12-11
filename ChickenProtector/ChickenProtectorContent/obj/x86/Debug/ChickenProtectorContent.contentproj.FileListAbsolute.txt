@@ -1,2 +1,3 @@
 C:\Users\Josh\GitHub\chicken-protector\ChickenProtector\ChickenProtectorContent\obj\x86\Debug\ChickenProtectorContent.contentprojResolveAssemblyReference.cache
 E:\XNA\chicken-protector\ChickenProtector\ChickenProtectorContent\obj\x86\Debug\ChickenProtectorContent.contentprojResolveAssemblyReference.cache
+X:\GitHub\chicken-protector\ChickenProtector\ChickenProtectorContent\obj\x86\Debug\ChickenProtectorContent.contentprojResolveAssemblyReference.cache

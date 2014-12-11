@@ -2,6 +2,7 @@
 {
     using System;
     using Artemis.Interface;
+    using Microsoft.Xna.Framework;
 
     public class VelocityComponent : IComponent
     {
@@ -30,6 +31,17 @@
             get
             {
                 return this.Angle * ToRadians;
+            }
+        }
+
+        public Vector2 Velocity 
+        { 
+            get
+            {
+                return new Vector2(
+                    (float)Math.Cos(AngleAsRadians) * Speed,
+                    (float)Math.Sin(AngleAsRadians) * Speed
+                );
             }
         }
 

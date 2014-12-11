@@ -24,8 +24,8 @@ using ChickenProtector.Components;
                 {
                     float ms = TimeSpan.FromTicks(this.EntityWorld.Delta).Milliseconds;
 
-                    transformComponent.X += (float)(Math.Cos(velocityComponent.AngleAsRadians) * velocityComponent.Speed * ms);
-                    transformComponent.Y += (float)(Math.Sin(velocityComponent.AngleAsRadians) * velocityComponent.Speed * ms);
+                    transformComponent.X += (float)(velocityComponent.Velocity.X * ms);
+                    transformComponent.Y += (float)(velocityComponent.Velocity.Y * ms);
                 }
             }
         }

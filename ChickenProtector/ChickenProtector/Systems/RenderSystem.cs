@@ -62,17 +62,25 @@ namespace ChickenProtector.Systems
         /// <summary>The content manager.</summary>
         private ContentManager contentManager;
 
+        private GraphicsDevice graphicsDevice;
+
         /// <summary>The spatial name.</summary>
         private string spatialName;
 
         /// <summary>The sprite batch.</summary>
         private SpriteBatch spriteBatch;
 
+        private Texture2D hitBox;
+
         /// <summary>Override to implement code that gets executed when systems are initialized.</summary>
         public override void LoadContent()
         {
             this.spriteBatch = BlackBoard.GetEntry<SpriteBatch>("SpriteBatch");
             this.contentManager = BlackBoard.GetEntry<ContentManager>("ContentManager");
+            this.graphicsDevice = BlackBoard.GetEntry<GraphicsDevice>("GraphicsDevice");
+
+            hitBox = new Texture2D(graphicsDevice, 1, 1);
+            hitBox.SetData(new Color[] { Color.Red });
         }
 
         /// <summary>Processes the specified entity.</summary>
@@ -83,10 +91,10 @@ namespace ChickenProtector.Systems
             {
                 this.spatialName = spatialFormComponent.SpatialFormFile;
 
-                if (transformComponent.X >= 0 &&
-                    transformComponent.Y >= 0 &&
-                    transformComponent.X < this.spriteBatch.GraphicsDevice.Viewport.Width &&
-                    transformComponent.Y < this.spriteBatch.GraphicsDevice.Viewport.Height)
+                if (transformComponent.X >= -10 &&
+                    transformComponent.Y >= -10 &&
+                    transformComponent.X < this.spriteBatch.GraphicsDevice.Viewport.Width + 10 &&
+                    transformComponent.Y < this.spriteBatch.GraphicsDevice.Viewport.Height + 10)
                 {
                     ///very naive render ...
                     if (string.Compare("PlayerShip", this.spatialName, StringComparison.InvariantCultureIgnoreCase) == 0)
@@ -113,10 +121,22 @@ namespace ChickenProtector.Systems
                     {
                         CrackedEgg.Render(this.spriteBatch, this.contentManager, transformComponent);
                     }
-
                 }
+
+#if DEBUG
+                Vector2 pos = new Vector2((int)transformComponent.X - (int)transformComponent.Width / 2, (int)transformComponent.Y - (int)transformComponent.Height / 2);
+                Rectangle hitBoxRect = new Rectangle(
+                    (int)pos.X, (int)pos.Y,
+                    (int)transformComponent.Width, 
+                    (int)transformComponent.Height
+                );
+                
+                spriteBatch.Draw(hitBox, pos, new Rectangle(hitBoxRect.Left, hitBoxRect.Top, hitBoxRect.Width, 1), Color.Red, 0, Vector2.Zero, 1, SpriteEffects.None, 1.0f);
+                spriteBatch.Draw(hitBox, pos + new Vector2(0, hitBoxRect.Height), new Rectangle(hitBoxRect.Left, hitBoxRect.Bottom, hitBoxRect.Width, 1), Color.Red, 0, Vector2.Zero, 1, SpriteEffects.None, 1.0f);
+                spriteBatch.Draw(hitBox, pos, new Rectangle(hitBoxRect.Left, hitBoxRect.Top, 1, hitBoxRect.Height), Color.Red, 0, Vector2.Zero, 1, SpriteEffects.None, 1.0f);
+                spriteBatch.Draw(hitBox, pos + new Vector2(hitBoxRect.Width, 0), new Rectangle(hitBoxRect.Right, hitBoxRect.Top, 1, hitBoxRect.Height + 1), Color.Red, 0, Vector2.Zero, 1, SpriteEffects.None, 1.0f);
+#endif
             }
         }
-
     }
 }
