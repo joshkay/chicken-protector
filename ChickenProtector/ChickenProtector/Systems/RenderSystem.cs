@@ -97,6 +97,10 @@ namespace ChickenProtector.Systems
                     {
                         Egg.Render(this.spriteBatch, this.contentManager, transformComponent);
                     }
+                    else if (string.Compare("Mosquito", this.spatialName, StringComparison.InvariantCultureIgnoreCase) == 0)
+                    {
+                        Mosquito.Render(this.spriteBatch, this.contentManager, transformComponent);
+                    }
                     else if (string.Compare("Barn", this.spatialName, StringComparison.InvariantCultureIgnoreCase) == 0)
                     {
                         Barn.Render(this.spriteBatch, this.contentManager, transformComponent);

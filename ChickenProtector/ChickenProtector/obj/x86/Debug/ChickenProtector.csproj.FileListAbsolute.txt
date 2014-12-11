@@ -9,8 +9,6 @@ C:\Users\Josh\GitHub\chicken-protector\ChickenProtector\ChickenProtector\bin\x86
 E:\XNA\chicken-protector\ChickenProtector\ChickenProtector\bin\x86\Debug\Content\myFont.xnb
 E:\XNA\chicken-protector\ChickenProtector\ChickenProtector\bin\x86\Debug\ChickenProtector.exe
 E:\XNA\chicken-protector\ChickenProtector\ChickenProtector\bin\x86\Debug\ChickenProtector.pdb
-E:\XNA\chicken-protector\ChickenProtector\ChickenProtector\bin\x86\Debug\artemis.xml
-E:\XNA\chicken-protector\ChickenProtector\ChickenProtector\obj\x86\Debug\ChickenProtector.csprojResolveAssemblyReference.cache
 E:\XNA\chicken-protector\ChickenProtector\ChickenProtector\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
 E:\XNA\chicken-protector\ChickenProtector\ChickenProtector\obj\x86\Debug\ChickenProtector.exe
 E:\XNA\chicken-protector\ChickenProtector\ChickenProtector\obj\x86\Debug\ChickenProtector.pdb
@@ -49,3 +47,15 @@ X:\GitHub\chicken-protector\ChickenProtector\ChickenProtector\obj\x86\Debug\Chic
 X:\GitHub\chicken-protector\ChickenProtector\ChickenProtector\obj\x86\Debug\ChickenProtector.pdb
 X:\GitHub\chicken-protector\ChickenProtector\ChickenProtector\bin\x86\Debug\Content\blood.xnb
 X:\GitHub\chicken-protector\ChickenProtector\ChickenProtector\bin\x86\Debug\Content\cracked-egg.xnb
+E:\XNA\chicken-protector\ChickenProtector\ChickenProtector\bin\x86\Debug\Content\tiles\dirttile.xnb
+E:\XNA\chicken-protector\ChickenProtector\ChickenProtector\bin\x86\Debug\Content\tiles\grasstile.xnb
+E:\XNA\chicken-protector\ChickenProtector\ChickenProtector\bin\x86\Debug\Content\tiles\snowtile.xnb
+E:\XNA\chicken-protector\ChickenProtector\ChickenProtector\bin\x86\Debug\Content\tiles\watertile.xnb
+E:\XNA\chicken-protector\ChickenProtector\ChickenProtector\bin\x86\Debug\Content\blood.xnb
+E:\XNA\chicken-protector\ChickenProtector\ChickenProtector\bin\x86\Debug\Content\cracked-egg.xnb
+E:\XNA\chicken-protector\ChickenProtector\ChickenProtector\bin\x86\Debug\Content\sound\oldmcdonald.xnb
+E:\XNA\chicken-protector\ChickenProtector\ChickenProtector\bin\x86\Debug\Content\sound\poop.xnb
+E:\XNA\chicken-protector\ChickenProtector\ChickenProtector\bin\x86\Debug\Content\sound\quack.xnb
+E:\XNA\chicken-protector\ChickenProtector\ChickenProtector\bin\x86\Debug\Content\sound\oldmcdonald.wma
+E:\XNA\chicken-protector\ChickenProtector\ChickenProtector\bin\x86\Debug\Content\mosquito.xnb
+E:\XNA\chicken-protector\ChickenProtector\ChickenProtector\obj\x86\Debug\ChickenProtector.csprojResolveAssemblyReference.cache

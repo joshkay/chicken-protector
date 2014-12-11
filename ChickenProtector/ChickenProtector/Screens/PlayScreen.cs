@@ -53,7 +53,7 @@
             EntitySystem.BlackBoard.SetEntry("GraphicsDevice", this.GraphicsDevice);
             EntitySystem.BlackBoard.SetEntry("SpriteBatch", this.spriteBatch);
             EntitySystem.BlackBoard.SetEntry("SpriteFont", this.font);
-            EntitySystem.BlackBoard.SetEntry("EnemyInterval", 500);
+            EntitySystem.BlackBoard.SetEntry("EnemyInterval", 850);
 
 #if XBOX
             this.entityWorld.InitializeAll( System.Reflection.Assembly.GetExecutingAssembly());
@@ -64,6 +64,7 @@
             InitializeTileMap();
             InitializeBarn();
             InitializeChicken();
+            InitializeMosquito();
         }
 
         public override void Show()
@@ -120,6 +121,13 @@
             Entity entity = this.entityWorld.CreateEntityFromTemplate(PlayerTemplate.Name);
             entity.GetComponent<TransformComponent>().X = this.GraphicsDevice.Viewport.Width * 0.5f;
             entity.GetComponent<TransformComponent>().Y = this.GraphicsDevice.Viewport.Height - 50;
+        }
+        private void InitializeMosquito()
+        {
+            Entity entity = this.entityWorld.CreateEntityFromTemplate(MosquitoTemplate.Name);
+            entity.GetComponent<TransformComponent>().X = this.GraphicsDevice.Viewport.Width * 0.5f;
+            entity.GetComponent<TransformComponent>().Y = this.GraphicsDevice.Viewport.Height - 100;
+            entity.GetComponent<VelocityComponent>().Speed = 0.05f;
         }
 
         private void InitializeBarn()
