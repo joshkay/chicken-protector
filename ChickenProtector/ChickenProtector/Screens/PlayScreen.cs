@@ -13,6 +13,7 @@
 
     using ChickenProtector.Components;
     using ChickenProtector.Templates;
+    using ChickenProtector.Systems;
 
     #endregion
 
@@ -53,7 +54,8 @@
             EntitySystem.BlackBoard.SetEntry("GraphicsDevice", this.GraphicsDevice);
             EntitySystem.BlackBoard.SetEntry("SpriteBatch", this.spriteBatch);
             EntitySystem.BlackBoard.SetEntry("SpriteFont", this.font);
-            EntitySystem.BlackBoard.SetEntry("EnemyInterval", 1000);
+            EntitySystem.BlackBoard.SetEntry("EnemyInterval", 4000);
+            EntitySystem.BlackBoard.SetEntry("WaveInterval", 30000);
 
 #if XBOX
             this.entityWorld.InitializeAll( System.Reflection.Assembly.GetExecutingAssembly());
@@ -97,6 +99,10 @@
         public override void Draw(GameTime gameTime)
         {
             string fps = string.Format("fps: {0}", this.frameRate);
+            if (EnemyWaveSystem.GetWave() % 3 == 0)
+                fps = fps + string.Format("\n\n!!! BOSS !!! BOSS !!!", EnemyWaveSystem.GetWave());
+            else
+                fps = fps + string.Format("\n\nWave: {0}", EnemyWaveSystem.GetWave());
 #if DEBUG
             string entityCount = string.Format("Active entities: {0}", this.entityWorld.EntityManager.ActiveEntities.Count);
             string removedEntityCount = string.Format("Removed entities: {0}", this.entityWorld.EntityManager.TotalRemoved);
