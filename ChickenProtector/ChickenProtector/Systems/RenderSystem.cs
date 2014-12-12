@@ -125,6 +125,10 @@ namespace ChickenProtector.Systems
                     {
                         CrackedEgg.Render(this.spriteBatch, this.contentManager, transformComponent);
                     }
+                    else if (string.Compare("Hawk", this.spatialName, StringComparison.InvariantCultureIgnoreCase) == 0)
+                    {
+                        Hawk.Render(this.spriteBatch, this.contentManager, transformComponent);
+                    }
                 }
 
 #if DEBUG

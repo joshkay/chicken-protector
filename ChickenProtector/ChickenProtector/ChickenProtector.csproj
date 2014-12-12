@@ -76,6 +76,7 @@
     <Reference Include="System.Net" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Components\BossComponent.cs" />
     <Compile Include="Components\DamageComponent.cs" />
     <Compile Include="Components\EnemyComponent.cs" />
     <Compile Include="Components\ExpiresComponent.cs" />
@@ -88,7 +89,9 @@
     <Compile Include="Components\TransformComponent.cs" />
     <Compile Include="Components\VelocityComponent.cs" />
     <Compile Include="Components\WeaponComponent.cs" />
+    <Compile Include="Helper\EnemyFactory.cs" />
     <Compile Include="Helper\Timer.cs" />
+    <Compile Include="Screens\GameOverScreen.cs" />
     <Compile Include="Screens\GameScreen.cs" />
     <Compile Include="ChickenGame.cs" />
     <Compile Include="Screens\MenuComponent.cs" />
@@ -101,6 +104,7 @@
     <Compile Include="Spatials\BloodPool.cs" />
     <Compile Include="Spatials\CrackedEgg.cs" />
     <Compile Include="Spatials\Egg.cs" />
+    <Compile Include="Spatials\Hawk.cs" />
     <Compile Include="Spatials\Mosquito.cs" />
     <Compile Include="Spatials\PlayerChicken.cs" />
     <Compile Include="Spatials\PoopSound.cs" />
@@ -110,6 +114,7 @@
     <Compile Include="Systems\CollisionSystem.cs" />
     <Compile Include="Systems\EnemyShooterSystem.cs" />
     <Compile Include="Systems\EnemySpawnSystem.cs" />
+    <Compile Include="Systems\EnemyWaveSystem.cs" />
     <Compile Include="Systems\ExpirationSystem.cs" />
     <Compile Include="Systems\MosquitoSystem.cs" />
     <Compile Include="Systems\FollowSystem.cs" />
@@ -123,10 +128,12 @@
     <Compile Include="Templates\EggExplosionTemplate.cs" />
     <Compile Include="Templates\EggTemplate.cs" />
     <Compile Include="Templates\EnemyTemplate.cs" />
+    <Compile Include="Templates\HawkTemplate.cs" />
     <Compile Include="Templates\MissileTemplate.cs" />
     <Compile Include="Templates\AnimalDeathTemplate.cs" />
     <Compile Include="Templates\MosquitoTemplate.cs" />
     <Compile Include="Templates\PlayerTemplate.cs" />
+    <Compile Include="Templates\SpiderTemplate.cs" />
     <Compile Include="Templates\TileMapTemplate.cs" />
   </ItemGroup>
   <ItemGroup>

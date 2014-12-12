@@ -62,3 +62,28 @@ C:\Users\Josh\GitHub\chicken-protector\ChickenProtector\ChickenProtector\bin\x86
 C:\Users\Josh\GitHub\chicken-protector\ChickenProtector\ChickenProtector\bin\x86\Debug\Content\sound\poop.xnb
 C:\Users\Josh\GitHub\chicken-protector\ChickenProtector\ChickenProtector\bin\x86\Debug\Content\sound\quack.xnb
 C:\Users\Josh\GitHub\chicken-protector\ChickenProtector\ChickenProtector\bin\x86\Debug\Content\sound\oldmcdonald.wma
+D:\School\Console Dev\chicken-protector\ChickenProtector\ChickenProtector\bin\x86\Debug\Content\myFont.xnb
+D:\School\Console Dev\chicken-protector\ChickenProtector\ChickenProtector\bin\x86\Debug\Content\menuFont.xnb
+D:\School\Console Dev\chicken-protector\ChickenProtector\ChickenProtector\bin\x86\Debug\Content\chick.xnb
+D:\School\Console Dev\chicken-protector\ChickenProtector\ChickenProtector\bin\x86\Debug\Content\egg.xnb
+D:\School\Console Dev\chicken-protector\ChickenProtector\ChickenProtector\bin\x86\Debug\Content\barn.xnb
+D:\School\Console Dev\chicken-protector\ChickenProtector\ChickenProtector\bin\x86\Debug\Content\chickenbarn.xnb
+D:\School\Console Dev\chicken-protector\ChickenProtector\ChickenProtector\bin\x86\Debug\Content\popup.xnb
+D:\School\Console Dev\chicken-protector\ChickenProtector\ChickenProtector\bin\x86\Debug\Content\spider.xnb
+D:\School\Console Dev\chicken-protector\ChickenProtector\ChickenProtector\bin\x86\Debug\Content\tiles\dirttile.xnb
+D:\School\Console Dev\chicken-protector\ChickenProtector\ChickenProtector\bin\x86\Debug\Content\tiles\grasstile.xnb
+D:\School\Console Dev\chicken-protector\ChickenProtector\ChickenProtector\bin\x86\Debug\Content\tiles\snowtile.xnb
+D:\School\Console Dev\chicken-protector\ChickenProtector\ChickenProtector\bin\x86\Debug\Content\tiles\watertile.xnb
+D:\School\Console Dev\chicken-protector\ChickenProtector\ChickenProtector\bin\x86\Debug\Content\blood.xnb
+D:\School\Console Dev\chicken-protector\ChickenProtector\ChickenProtector\bin\x86\Debug\Content\cracked-egg.xnb
+D:\School\Console Dev\chicken-protector\ChickenProtector\ChickenProtector\bin\x86\Debug\Content\mosquito.xnb
+D:\School\Console Dev\chicken-protector\ChickenProtector\ChickenProtector\bin\x86\Debug\Content\hawk.xnb
+D:\School\Console Dev\chicken-protector\ChickenProtector\ChickenProtector\bin\x86\Debug\Content\sound\oldmcdonald.xnb
+D:\School\Console Dev\chicken-protector\ChickenProtector\ChickenProtector\bin\x86\Debug\Content\sound\poop.xnb
+D:\School\Console Dev\chicken-protector\ChickenProtector\ChickenProtector\bin\x86\Debug\Content\sound\quack.xnb
+D:\School\Console Dev\chicken-protector\ChickenProtector\ChickenProtector\bin\x86\Debug\Content\sound\oldmcdonald.wma
+D:\School\Console Dev\chicken-protector\ChickenProtector\ChickenProtector\bin\x86\Debug\ChickenProtector.exe
+D:\School\Console Dev\chicken-protector\ChickenProtector\ChickenProtector\bin\x86\Debug\ChickenProtector.pdb
+D:\School\Console Dev\chicken-protector\ChickenProtector\ChickenProtector\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+D:\School\Console Dev\chicken-protector\ChickenProtector\ChickenProtector\obj\x86\Debug\ChickenProtector.exe
+D:\School\Console Dev\chicken-protector\ChickenProtector\ChickenProtector\obj\x86\Debug\ChickenProtector.pdb

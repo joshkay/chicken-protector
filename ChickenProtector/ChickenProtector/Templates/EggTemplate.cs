@@ -24,7 +24,7 @@
             entity.AddComponent(new VelocityComponent());
             entity.AddComponent(new ExpiresComponent(2500));
             entity.AddComponent(new ProjectileComponent());
-            entity.AddComponent(new DamageComponent(4));
+            entity.AddComponent(new DamageComponent(5));
 
             entity.GetComponent<TransformComponent>().Width = 20;
             entity.GetComponent<TransformComponent>().Height = 25;

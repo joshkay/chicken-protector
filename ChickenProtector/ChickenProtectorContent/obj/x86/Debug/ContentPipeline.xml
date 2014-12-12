@@ -7,8 +7,8 @@
       <Importer>FontDescriptionImporter</Importer>
       <Processor>FontDescriptionProcessor</Processor>
       <Options>None</Options>
-      <Output>E:\XNA\chicken-protector\ChickenProtector\ChickenProtector\bin\x86\Debug\Content\myFont.xnb</Output>
-      <Time>2014-12-10T13:43:57.6266619-05:00</Time>
+      <Output>D:\School\Console Dev\chicken-protector\ChickenProtector\ChickenProtector\bin\x86\Debug\Content\myFont.xnb</Output>
+      <Time>2014-12-11T09:00:40.4152917-05:00</Time>
     </Item>
     <Item>
       <Source>menuFont.spritefont</Source>
@@ -16,8 +16,8 @@
       <Importer>FontDescriptionImporter</Importer>
       <Processor>FontDescriptionProcessor</Processor>
       <Options>None</Options>
-      <Output>E:\XNA\chicken-protector\ChickenProtector\ChickenProtector\bin\x86\Debug\Content\menuFont.xnb</Output>
-      <Time>2014-12-10T20:02:16.4246627-05:00</Time>
+      <Output>D:\School\Console Dev\chicken-protector\ChickenProtector\ChickenProtector\bin\x86\Debug\Content\menuFont.xnb</Output>
+      <Time>2014-12-11T09:00:40.4142916-05:00</Time>
     </Item>
     <Item>
       <Source>chick.png</Source>
@@ -25,8 +25,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>E:\XNA\chicken-protector\ChickenProtector\ChickenProtector\bin\x86\Debug\Content\chick.xnb</Output>
-      <Time>2014-12-10T20:02:16.2006499-05:00</Time>
+      <Output>D:\School\Console Dev\chicken-protector\ChickenProtector\ChickenProtector\bin\x86\Debug\Content\chick.xnb</Output>
+      <Time>2014-12-11T09:00:40.4132916-05:00</Time>
     </Item>
     <Item>
       <Source>egg.png</Source>
@@ -34,8 +34,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>E:\XNA\chicken-protector\ChickenProtector\ChickenProtector\bin\x86\Debug\Content\egg.xnb</Output>
-      <Time>2014-12-10T20:02:16.3656593-05:00</Time>
+      <Output>D:\School\Console Dev\chicken-protector\ChickenProtector\ChickenProtector\bin\x86\Debug\Content\egg.xnb</Output>
+      <Time>2014-12-11T09:00:40.4142916-05:00</Time>
     </Item>
     <Item>
       <Source>barn.png</Source>
@@ -43,8 +43,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>E:\XNA\chicken-protector\ChickenProtector\ChickenProtector\bin\x86\Debug\Content\barn.xnb</Output>
-      <Time>2014-12-10T20:02:16.1026443-05:00</Time>
+      <Output>D:\School\Console Dev\chicken-protector\ChickenProtector\ChickenProtector\bin\x86\Debug\Content\barn.xnb</Output>
+      <Time>2014-12-11T09:00:40.4122915-05:00</Time>
     </Item>
     <Item>
       <Source>chickenbarn.jpg</Source>
@@ -52,8 +52,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>E:\XNA\chicken-protector\ChickenProtector\ChickenProtector\bin\x86\Debug\Content\chickenbarn.xnb</Output>
-      <Time>2014-12-10T20:02:16.2636535-05:00</Time>
+      <Output>D:\School\Console Dev\chicken-protector\ChickenProtector\ChickenProtector\bin\x86\Debug\Content\chickenbarn.xnb</Output>
+      <Time>2014-12-11T09:00:40.4132916-05:00</Time>
     </Item>
     <Item>
       <Source>popup.png</Source>
@@ -61,8 +61,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>E:\XNA\chicken-protector\ChickenProtector\ChickenProtector\bin\x86\Debug\Content\popup.xnb</Output>
-      <Time>2014-12-10T20:02:16.6316745-05:00</Time>
+      <Output>D:\School\Console Dev\chicken-protector\ChickenProtector\ChickenProtector\bin\x86\Debug\Content\popup.xnb</Output>
+      <Time>2014-12-11T09:00:40.4182919-05:00</Time>
     </Item>
     <Item>
       <Source>spider.png</Source>
@@ -70,8 +70,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>E:\XNA\chicken-protector\ChickenProtector\ChickenProtector\bin\x86\Debug\Content\spider.xnb</Output>
-      <Time>2014-12-10T20:32:14.1744881-05:00</Time>
+      <Output>D:\School\Console Dev\chicken-protector\ChickenProtector\ChickenProtector\bin\x86\Debug\Content\spider.xnb</Output>
+      <Time>2014-12-11T09:00:40.4512938-05:00</Time>
     </Item>
     <Item>
       <Source>tiles\dirttile.png</Source>
@@ -79,8 +79,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>E:\XNA\chicken-protector\ChickenProtector\ChickenProtector\bin\x86\Debug\Content\tiles\dirttile.xnb</Output>
-      <Time>2014-12-10T20:32:14.3184963-05:00</Time>
+      <Output>D:\School\Console Dev\chicken-protector\ChickenProtector\ChickenProtector\bin\x86\Debug\Content\tiles\dirttile.xnb</Output>
+      <Time>2014-12-11T09:00:40.4522938-05:00</Time>
     </Item>
     <Item>
       <Source>tiles\grasstile.png</Source>
@@ -88,8 +88,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>E:\XNA\chicken-protector\ChickenProtector\ChickenProtector\bin\x86\Debug\Content\tiles\grasstile.xnb</Output>
-      <Time>2014-12-10T20:32:14.3664991-05:00</Time>
+      <Output>D:\School\Console Dev\chicken-protector\ChickenProtector\ChickenProtector\bin\x86\Debug\Content\tiles\grasstile.xnb</Output>
+      <Time>2014-12-11T09:00:40.4522938-05:00</Time>
     </Item>
     <Item>
       <Source>tiles\snowtile.png</Source>
@@ -97,8 +97,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>E:\XNA\chicken-protector\ChickenProtector\ChickenProtector\bin\x86\Debug\Content\tiles\snowtile.xnb</Output>
-      <Time>2014-12-10T20:32:14.4185021-05:00</Time>
+      <Output>D:\School\Console Dev\chicken-protector\ChickenProtector\ChickenProtector\bin\x86\Debug\Content\tiles\snowtile.xnb</Output>
+      <Time>2014-12-11T09:00:40.4522938-05:00</Time>
     </Item>
     <Item>
       <Source>tiles\watertile.png</Source>
@@ -106,8 +106,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>E:\XNA\chicken-protector\ChickenProtector\ChickenProtector\bin\x86\Debug\Content\tiles\watertile.xnb</Output>
-      <Time>2014-12-10T20:32:14.4625046-05:00</Time>
+      <Output>D:\School\Console Dev\chicken-protector\ChickenProtector\ChickenProtector\bin\x86\Debug\Content\tiles\watertile.xnb</Output>
+      <Time>2014-12-11T09:00:40.4532939-05:00</Time>
     </Item>
     <Item>
       <Source>blood.png</Source>
@@ -115,8 +115,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>E:\XNA\chicken-protector\ChickenProtector\ChickenProtector\bin\x86\Debug\Content\blood.xnb</Output>
-      <Time>2014-12-10T20:34:57.8468496-05:00</Time>
+      <Output>D:\School\Console Dev\chicken-protector\ChickenProtector\ChickenProtector\bin\x86\Debug\Content\blood.xnb</Output>
+      <Time>2014-12-11T09:00:40.4122915-05:00</Time>
     </Item>
     <Item>
       <Source>cracked-egg.png</Source>
@@ -124,36 +124,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>E:\XNA\chicken-protector\ChickenProtector\ChickenProtector\bin\x86\Debug\Content\cracked-egg.xnb</Output>
-      <Time>2014-12-10T20:34:57.8998527-05:00</Time>
-    </Item>
-    <Item>
-      <Source>sound\oldmcdonald.mp3</Source>
-      <Name>sound\oldmcdonald</Name>
-      <Importer>Mp3Importer</Importer>
-      <Processor>SongProcessor</Processor>
-      <Options>None</Options>
-      <Output>E:\XNA\chicken-protector\ChickenProtector\ChickenProtector\bin\x86\Debug\Content\sound\oldmcdonald.xnb</Output>
-      <Extra>E:\XNA\chicken-protector\ChickenProtector\ChickenProtector\bin\x86\Debug\Content\sound\oldmcdonald.wma</Extra>
-      <Time>2014-12-10T20:32:13.8114673-05:00</Time>
-    </Item>
-    <Item>
-      <Source>sound\poop.wav</Source>
-      <Name>sound\poop</Name>
-      <Importer>WavImporter</Importer>
-      <Processor>SoundEffectProcessor</Processor>
-      <Options>None</Options>
-      <Output>E:\XNA\chicken-protector\ChickenProtector\ChickenProtector\bin\x86\Debug\Content\sound\poop.xnb</Output>
-      <Time>2014-12-10T20:32:13.9954779-05:00</Time>
-    </Item>
-    <Item>
-      <Source>sound\quack.wav</Source>
-      <Name>sound\quack</Name>
-      <Importer>WavImporter</Importer>
-      <Processor>SoundEffectProcessor</Processor>
-      <Options>None</Options>
-      <Output>E:\XNA\chicken-protector\ChickenProtector\ChickenProtector\bin\x86\Debug\Content\sound\quack.xnb</Output>
-      <Time>2014-12-10T20:32:14.0834829-05:00</Time>
+      <Output>D:\School\Console Dev\chicken-protector\ChickenProtector\ChickenProtector\bin\x86\Debug\Content\cracked-egg.xnb</Output>
+      <Time>2014-12-11T09:00:40.4132916-05:00</Time>
     </Item>
     <Item>
       <Source>mosquito.PNG</Source>
@@ -161,8 +133,45 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>E:\XNA\chicken-protector\ChickenProtector\ChickenProtector\bin\x86\Debug\Content\mosquito.xnb</Output>
-      <Time>2014-12-10T21:42:23.4452446-05:00</Time>
+      <Output>D:\School\Console Dev\chicken-protector\ChickenProtector\ChickenProtector\bin\x86\Debug\Content\mosquito.xnb</Output>
+      <Time>2014-12-11T09:00:40.4142916-05:00</Time>
+    </Item>
+    <Item>
+      <Source>hawk.png</Source>
+      <Name>hawk</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\School\Console Dev\chicken-protector\ChickenProtector\ChickenProtector\bin\x86\Debug\Content\hawk.xnb</Output>
+      <Time>2014-12-11T09:22:14.4465209-05:00</Time>
+    </Item>
+    <Item>
+      <Source>sound\oldmcdonald.mp3</Source>
+      <Name>sound\oldmcdonald</Name>
+      <Importer>Mp3Importer</Importer>
+      <Processor>SongProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\School\Console Dev\chicken-protector\ChickenProtector\ChickenProtector\bin\x86\Debug\Content\sound\oldmcdonald.xnb</Output>
+      <Extra>D:\School\Console Dev\chicken-protector\ChickenProtector\ChickenProtector\bin\x86\Debug\Content\sound\oldmcdonald.wma</Extra>
+      <Time>2014-12-11T09:00:40.4482936-05:00</Time>
+    </Item>
+    <Item>
+      <Source>sound\poop.wav</Source>
+      <Name>sound\poop</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\School\Console Dev\chicken-protector\ChickenProtector\ChickenProtector\bin\x86\Debug\Content\sound\poop.xnb</Output>
+      <Time>2014-12-11T09:00:40.4492936-05:00</Time>
+    </Item>
+    <Item>
+      <Source>sound\quack.wav</Source>
+      <Name>sound\quack</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\School\Console Dev\chicken-protector\ChickenProtector\ChickenProtector\bin\x86\Debug\Content\sound\quack.xnb</Output>
+      <Time>2014-12-11T09:00:40.4502937-05:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
@@ -170,39 +179,39 @@
       <TargetProfile>Reach</TargetProfile>
       <BuildConfiguration>Debug</BuildConfiguration>
       <CompressContent>false</CompressContent>
-      <RootDirectory>E:\XNA\chicken-protector\ChickenProtector\ChickenProtectorContent\</RootDirectory>
-      <LoggerRootDirectory>E:\XNA\chicken-protector\ChickenProtector\ChickenProtector\</LoggerRootDirectory>
-      <IntermediateDirectory>E:\XNA\chicken-protector\ChickenProtector\ChickenProtectorContent\obj\x86\Debug\</IntermediateDirectory>
-      <OutputDirectory>E:\XNA\chicken-protector\ChickenProtector\ChickenProtector\bin\x86\Debug\Content\</OutputDirectory>
+      <RootDirectory>D:\School\Console Dev\chicken-protector\ChickenProtector\ChickenProtectorContent\</RootDirectory>
+      <LoggerRootDirectory>D:\School\Console Dev\chicken-protector\ChickenProtector\ChickenProtector\</LoggerRootDirectory>
+      <IntermediateDirectory>D:\School\Console Dev\chicken-protector\ChickenProtector\ChickenProtectorContent\obj\x86\Debug\</IntermediateDirectory>
+      <OutputDirectory>D:\School\Console Dev\chicken-protector\ChickenProtector\ChickenProtector\bin\x86\Debug\Content\</OutputDirectory>
     </Settings>
     <Assemblies>
       <Assembly>
         <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.XImporter.dll</Key>
-        <Value>2010-08-23T12:41:18-04:00</Value>
+        <Value>2010-08-23T13:41:18-04:00</Value>
       </Assembly>
       <Assembly>
         <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.VideoImporters.dll</Key>
-        <Value>2010-08-23T12:41:18-04:00</Value>
+        <Value>2010-08-23T13:41:18-04:00</Value>
       </Assembly>
       <Assembly>
         <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.TextureImporter.dll</Key>
-        <Value>2010-08-23T12:41:18-04:00</Value>
+        <Value>2010-08-23T13:41:18-04:00</Value>
       </Assembly>
       <Assembly>
         <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.FBXImporter.dll</Key>
-        <Value>2010-08-23T12:41:18-04:00</Value>
+        <Value>2010-08-23T13:41:18-04:00</Value>
       </Assembly>
       <Assembly>
         <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.EffectImporter.dll</Key>
-        <Value>2010-08-23T12:41:18-04:00</Value>
+        <Value>2010-08-23T13:41:18-04:00</Value>
       </Assembly>
       <Assembly>
         <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.AudioImporters.dll</Key>
-        <Value>2010-08-23T12:41:18-04:00</Value>
+        <Value>2010-08-23T13:41:18-04:00</Value>
       </Assembly>
       <Assembly>
-        <Key>C:\Windows\Microsoft.Net\assembly\GAC_32\Microsoft.Xna.Framework.Content.Pipeline\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.Content.Pipeline.dll</Key>
-        <Value>2014-10-30T08:33:39.754449-04:00</Value>
+        <Key>C:\windows\Microsoft.Net\assembly\GAC_32\Microsoft.Xna.Framework.Content.Pipeline\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.Content.Pipeline.dll</Key>
+        <Value>2014-11-19T11:45:54.2699258-05:00</Value>
       </Assembly>
     </Assemblies>
   </Asset>
